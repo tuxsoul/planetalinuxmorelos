@@ -44,6 +44,10 @@ symlink '../inc', 'inc' or die "Couldn't symlink: $!";
 
 say " done!";
 
+say "";
+say "You will still have to edit conf/apache.conf by hand to add this new
+instance into the Apache configuration. Once you've done that, notify David
+so he can reload or restart the webserver.";
 
 sub usage {
 	say "ERR: " . $_[0] if $_[0];
