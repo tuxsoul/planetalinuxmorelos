@@ -35,7 +35,8 @@ for my $ins ( readdir($fh) ) {
 			say " done.";
 			
 			say "removing template...";
-			system("rm", "-f", "$dir/../proc/$ins/index.html.tmpl*") == 0
+			
+			system("rm", "-f", "$dir/../proc/$ins/index.html.tmpl", "$dir/../proc/$ins/index.html.tmplc") == 0
 				or die "Couldn't remove template: $?";
 				
 			say "done!";
