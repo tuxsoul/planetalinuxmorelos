@@ -35,8 +35,8 @@ for my $ins ( readdir($fh) ) {
 			say " done.";
 			
 			say "removing template...";
-			unlink "$dir/../proc/$ins/index.html.tmpl"
-				or die "Couldn't remove template.";
+			system("rm", "-f", "$dir/../proc/$ins/index.html.tmpl*") == 0
+				or die "Couldn't remove template: $?";
 				
 			say "done!";
 		}
