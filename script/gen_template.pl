@@ -103,8 +103,6 @@ __END__
 <link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
 <link rel="alternate" type="application/rss+xml" title="Planeta Linux | [% instance_name %]" href="http://feedproxy.google.com/PlanetaLinux[% instance_name_pure.remove('\s+') %]" />
 
-<script src="../javascript/retweet.js"></script>
-
 </head>
 
 <body>
@@ -167,11 +165,20 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 			<div class="post-inner">
 				<h3 class="entry-title"><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_IF title><TMPL_VAR title><TMPL_ELSE>(Sin Título)</TMPL_IF></a></h3>
 				<div class="entry-content">
-				
+
+				<script type="text/javascript">
+					tweetmeme_url = '<TMPL_VAR link ESCAPE="HTML">';
+					tweetmeme_source = 'planetalinux';
+				</script>
+
+				<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
+				<br />
+
 				<TMPL_VAR content>
+				
 				</div><!--/entry-content-->
 				<div class="post-footer">
-      					<p><a class="retweet" href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_VAR title> (por <TMPL_VAR channel_name> desde @planetalinux)</a><a href="<TMPL_VAR link ESCAPE="HTML">" class="permalink"><TMPL_VAR date></a></p>
+      					<p><a href="<TMPL_VAR link ESCAPE="HTML">" class="permalink"><TMPL_VAR date></a></p>
 				</div><!--post-footer-->
     			</div><!--/post-inner-->
 		</div><!--/post-->
