@@ -1,3 +1,5 @@
+*.pyc
+venus/planet/*.pyc
 proc/rss20-new.xml.tmplc
 cache/*
 proc/universo/config.ini
