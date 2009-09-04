@@ -1,4 +1,9 @@
 *.pyc
+www/*
+!www/README
+!www/css
+!www/images
+!www/javascript
 venus/planet/*.pyc
 proc/rss20-new.xml.tmplc
 cache/*
