@@ -143,12 +143,13 @@ sub _add_feed {
 	}
 	
 	my $gotchi_dest;
+	my $gotchi;
 	if($opt->{hackergotchi}) {
 		my $ext = (split '/', mimetype($opt->{hackergotchi}))[1];
 	
 		my $img = Image::Magick->new;
 		$img->Read($opt->{hackergotchi});
-		my $gotchi = $img->Clone;
+		$gotchi = $img->Clone;
 		$gotchi->Resize(geometry => '95x95');
 		$gotchi_dest = dirname(__FILE__).'/../../../../www/images/cabezas/'.$countries[0]."/$filename".'.'.$ext;
 		$s->{face} = $countries[0]."/$filename.$ext";
