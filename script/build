@@ -4,39 +4,41 @@ use Modern::Perl;
 use File::Basename;
 use Config::IniFiles;
 use App::PPBuild;
+use Net::Domain::ES::ccTLD;
 
 my $dir = dirname(__FILE__);
 
-opendir my $fh, $dir.'/../proc'
-	or die "Couldn't open proc directory: $!";
+open my $fh, "<", $dir."/../config/countries.list"
+	or die "Couldn't read the countries list.";
 
+my $r = {};
 
-
-for my $ins ( readdir($fh) ) {
-	next unless $ins =~ /^\w{2}$/;
-	
-	my $cfg = Config::IniFiles->new(-file => $dir.'/../proc/'.$ins.'/config.ini');
-	
-	task $ins,
-		"Builds the Planeta Linux instance for: ".$cfg->val('Planet', 'country'),
+while(<$fh>) {
+	chomp;
+	my $c_id = $_;
+	my $c_name = find_name_by_cctld( $c_id )
+		or die "Couldn't find the name in Spanish for the ccTLD: $c_id. I better die.\n";
+		
+	task $c_id,
+		"Builds the Planeta Linux instance for: `$c_name'",
 		sub {
-			say "running $ins!";
+			say "running $c_id!";
 			
 			# perl calls perl, yay!
 			say "generating template...";
-			system("perl", "$dir/../script/gen_template.pl", $ins) == 0
-				or die "Couldn't generate template for $ins: $?";
+			system("perl", "$dir/../script/gen_template.pl", $c_id) == 0
+				or die "Couldn't generate template for $c_id: $?";
 			say " done.";
 				
 			# perl calls python, ew!
 			say "generating planet...";
-			system("$dir/../venus/planet.py", "$dir/../proc/$ins/config.ini") == 0
+			system("$dir/../venus/planet.py", "$dir/../proc/$c_id/config.ini") == 0
 				or die "Couldn't generate planet: $?";
 			say " done.";
 			
 			say "removing template...";
 			
-			system("rm", "-f", "$dir/../proc/$ins/index.html.tmpl", "$dir/../proc/$ins/index.html.tmplc") == 0
+			system("rm", "-f", "$dir/../proc/$c_id/index.html.tmpl", "$dir/../proc/$c_id/index.html.tmplc") == 0
 				or die "Couldn't remove template: $?";
 				
 			say "done!";
