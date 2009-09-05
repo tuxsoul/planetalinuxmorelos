@@ -25,7 +25,7 @@ for (@modules) {
 	die $@ if $@;
 }
 
-print ".. done. enjoy :)\n"
+print "\n.. done. enjoy :)\n"
 
 __DATA__
 App::Cmd
