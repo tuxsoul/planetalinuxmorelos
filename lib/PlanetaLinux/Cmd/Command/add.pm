@@ -115,16 +115,8 @@ sub _add_feed {
 	my $file_dir = dirname(__FILE__)."/../../../../authors/".substr($abbr, 0, 1)."/".$abbr;
 	
 	my @countries = split ',', lc $opt->{countries};
-	
-	my $ext = (split '/', mimetype($opt->{hackergotchi}))[1];
-	
-	my $img = Image::Magick->new;
-	$img->Read($opt->{hackergotchi});
-	my $gotchi = $img->Clone;
-	$gotchi->Resize(geometry => '95x95');
-	my $dest = dirname(__FILE__).'/../../../../www/images/cabezas/'.$countries[0]."/$filename".'.'.$ext;
 	my $yaml = $file_dir."/$filename.yaml";
-	
+
 	my $s = {
 		url => $opt->{feed},
 		name => $opt->{name},
@@ -134,7 +126,6 @@ sub _add_feed {
 		email => $opt->{email},
 		twitter => $opt->{twitter},
 		message => undef,
-		face => $countries[0]."/$filename.$ext",
 	};
 	
 	$s->{portal} = 1 if $opt->{portal};
@@ -151,6 +142,18 @@ sub _add_feed {
 		$s->{$k} = $v;
 	}
 	
+	my $gotchi_dest;
+	if($opt->{hackergotchi}) {
+		my $ext = (split '/', mimetype($opt->{hackergotchi}))[1];
+	
+		my $img = Image::Magick->new;
+		$img->Read($opt->{hackergotchi});
+		my $gotchi = $img->Clone;
+		$gotchi->Resize(geometry => '95x95');
+		$gotchi_dest = dirname(__FILE__).'/../../../../www/images/cabezas/'.$countries[0]."/$filename".'.'.$ext;
+		$s->{face} = $countries[0]."/$filename.$ext";
+	}
+	
 	say "";
 	say ".. I will create the following structure on file: ";
 	say ".. ".$yaml;
@@ -164,8 +167,10 @@ sub _add_feed {
 	
 	say ".. creating directory: $file_dir";
 	make_path($file_dir);
-	say ".. rewriting image to: $dest";
-	$gotchi->Write($dest);
+	if($opt->{hackergotchi}) {
+		say ".. rewriting image to: $gotchi_dest";
+		$gotchi->Write($gotchi_dest);
+	}
 	say ".. writing yaml to: $yaml";
 	DumpFile($yaml, $s);
 
