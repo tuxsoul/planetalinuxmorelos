@@ -4,6 +4,8 @@ use Modern::Perl;
 use Config::IniFiles;
 use Data::Dumper;
 use File::Basename;
+use DateTime;
+use YAML::Syck;
 use File::Path qw!make_path!;
 
 die "No valid config file"
@@ -22,16 +24,36 @@ for my $val ( $cfg->Sections ) {
 	my $abbr = $filename; $abbr =~ s![^a-z]!!g; $abbr = substr $abbr, 0, 2;
 		
 	my $file_dir = dirname(__FILE__)."/../authors/".substr($abbr, 0, 1)."/".$abbr;
+	my $file = $file_dir.'/'.$filename;
+
+	next if -f $file;
 	
-	next if -f $file_dir."/".$filename;
+	say ".. creating directory: $file_dir";
 	make_path($file_dir);
 	
-	say "person: ".$cfg->val($val, 'name');
-	say "abrv: ".$abbr;
-	say "filename: $filename";
-	say "file: $file";
-	say "val: $val";
+	say ".. creating object for ".$cfg->val($val, 'name').' in '.$cfg->val('Planet', 'country_tld');
 	
-	print "\n";
-	# say Dumper $cfg->Parameters($val);
+	my $p = {
+		url => $val,
+		name => $cfg->val($val, 'name'),
+		countries => [
+			$cfg->val('Planet', 'country_tld'),
+		],
+		filename => $filename,
+		enabled => 'on', # by default
+		email => undef,
+		twitter => undef,
+		message => undef,
+	};
+	
+	for my $i ( $cfg->Parameters($val) ) {
+		next if $i eq 'name';
+		$p->{$i} = $cfg->val($val, $i);
+		
+		if($i eq 'face') {
+			$p->{$i} = $cfg->val('Planet', 'country_tld').'/'.$p->{$i}
+		}		
+	}
+	
+	DumpFile($file, $p);	
 }
