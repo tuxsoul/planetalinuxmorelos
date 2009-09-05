@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: lidsol
-message: ''
+message: ~
 name: Lidsol
 portal: 1
-twitter: ''
+twitter: ~
 url: http://lidsol.org/blog/feed

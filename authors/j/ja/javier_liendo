@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/javier.png
 filename: javier_liendo
-message: ''
+message: ~
 name: Javier Liendo
-twitter: ''
+twitter: ~
 url: http://osinfra.blogspot.com/atom.xml

@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/javier2.png
 filename: javier_galicia
-message: ''
+message: ~
 name: Javier Galicia
-twitter: ''
+twitter: ~
 url: http://javiergalicia.wordpress.com/tag/linux-y-software-libre/feed/

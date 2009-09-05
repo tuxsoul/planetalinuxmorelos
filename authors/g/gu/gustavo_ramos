@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: gustavo_ramos
-message: ''
+message: ~
 name: Gustavo Ramos
-twitter: ''
+twitter: ~
 url: http://www.grmexico.com.mx/blog/feed/rss.xml

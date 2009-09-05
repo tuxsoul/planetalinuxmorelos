@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: alberto_mart_237_nez
-message: ''
+message: ~
 name: Alberto Mart&#237;nez
-twitter: ''
+twitter: ~
 url: http://albertmtz.blogspot.com/atom.xml

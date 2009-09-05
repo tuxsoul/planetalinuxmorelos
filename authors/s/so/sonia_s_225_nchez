@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/sonny.png
 filename: sonia_s_225_nchez
-message: ''
+message: ~
 name: Sonia S&#225;nchez
-twitter: ''
+twitter: ~
 url: http://sonnytaz.blogspot.com/atom.xml

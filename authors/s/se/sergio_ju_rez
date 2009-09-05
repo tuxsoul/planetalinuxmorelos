@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: sergio_ju_rez
-message: ''
+message: ~
 name: "Sergio Ju\xC3\xA1rez"
-twitter: ''
+twitter: ~
 url: http://usar-linux.blogspot.com/atom.xml

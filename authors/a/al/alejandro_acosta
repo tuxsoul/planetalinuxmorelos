@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/alexacosta.png
 filename: alejandro_acosta
-message: ''
+message: ~
 name: Alejandro Acosta
-twitter: ''
+twitter: ~
 url: http://alexacosta.wordpress.com/feed/atom/

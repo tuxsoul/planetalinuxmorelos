@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/kad.png
 filename: jorge_a_gallegos
-message: ''
+message: ~
 name: Jorge A Gallegos
-twitter: ''
+twitter: ~
 url: http://feeds2.feedburner.com/kad/floss

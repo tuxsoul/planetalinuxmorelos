@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: iv_n_pompa_deathwarrior_
-message: ''
+message: ~
 name: "Iv\xC3\xA1n Pompa (deathwarrior)"
-twitter: ''
+twitter: ~
 url: http://deathwarrior.wordpress.com/feed/atom

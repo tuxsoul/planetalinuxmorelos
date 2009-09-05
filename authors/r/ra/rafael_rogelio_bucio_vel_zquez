@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/buciox.png
 filename: rafael_rogelio_bucio_vel_zquez
-message: ''
+message: ~
 name: "Rafael Rogelio Bucio Vel\xC3\xA1zquez"
-twitter: ''
+twitter: ~
 url: http://bucio.com.mx/feed/

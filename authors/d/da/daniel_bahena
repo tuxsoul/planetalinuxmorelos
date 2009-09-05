@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/kwame.png
 filename: daniel_bahena
-message: ''
+message: ~
 name: Daniel Bahena
-twitter: ''
+twitter: ~
 url: http://kwame.informatux.net/?feed=rss2

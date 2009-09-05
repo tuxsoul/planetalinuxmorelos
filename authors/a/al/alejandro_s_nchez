@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/nosferatu.png
 filename: alejandro_s_nchez
-message: ''
+message: ~
 name: "Alejandro S\xC3\xA1nchez"
-twitter: ''
+twitter: ~
 url: http://feeds.feedburner.com/alejandrosanchez

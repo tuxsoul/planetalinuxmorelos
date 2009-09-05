@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: junmin_huang
-message: ''
+message: ~
 name: Junmin Huang
-twitter: ''
+twitter: ~
 url: http://junmin.walsai.com/feeds/posts/default

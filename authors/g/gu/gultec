@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: gultec
-message: ''
+message: ~
 name: GULTEC
 portal: 1
-twitter: ''
+twitter: ~
 url: http://linux.mty.itesm.mx/blog/feed/atom/

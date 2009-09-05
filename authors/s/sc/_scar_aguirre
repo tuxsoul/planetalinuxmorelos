@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: _scar_aguirre
-message: ''
+message: ~
 name: "\xC3\x93scar Aguirre"
-twitter: ''
+twitter: ~
 url: http://www.manuelinux.info/blog/feed/software-libre

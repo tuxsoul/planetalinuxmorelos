@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: debian_gnu_linux_m_xico
-message: ''
+message: ~
 name: "Debian GNU/Linux M\xC3\xA9xico"
 portal: 1
-twitter: ''
+twitter: ~
 url: http://www.debian-mx.com/feed/

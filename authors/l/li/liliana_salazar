@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/liwiz.png
 filename: liliana_salazar
-message: ''
+message: ~
 name: Liliana Salazar
-twitter: ''
+twitter: ~
 url: http://geekatnite.blogspot.com/feeds/posts/default

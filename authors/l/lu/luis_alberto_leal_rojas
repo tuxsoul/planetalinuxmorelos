@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: luis_alberto_leal_rojas
-message: ''
+message: ~
 name: Luis Alberto Leal Rojas
-twitter: ''
+twitter: ~
 url: http://lealrojas.blogspot.com/feeds/posts/default

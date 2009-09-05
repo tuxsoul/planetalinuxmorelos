@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: rafael_carrillo
-message: ''
+message: ~
 name: Rafael Carrillo
-twitter: ''
+twitter: ~
 url: http://feeds.feedburner.com/brigadesos

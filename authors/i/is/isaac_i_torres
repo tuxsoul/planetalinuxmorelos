@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/istodi.png
 filename: isaac_i_torres
-message: ''
+message: ~
 name: Isaac I. Torres
-twitter: ''
+twitter: ~
 url: http://istodi.wordpress.com/tag/gnulinux/feed

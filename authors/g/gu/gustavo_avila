@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: gustavo_avila
-message: ''
+message: ~
 name: Gustavo Avila
-twitter: ''
+twitter: ~
 url: http://gus.impulsos.net/category/tech/feed

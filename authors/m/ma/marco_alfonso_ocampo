@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/maop.png
 filename: marco_alfonso_ocampo
-message: ''
+message: ~
 name: Marco Alfonso Ocampo
-twitter: ''
+twitter: ~
 url: http://marcoalfonso.net/category/pub/feed

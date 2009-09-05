@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/bogart.png
 filename: bogart_osuna
-message: ''
+message: ~
 name: Bogart Osuna
-twitter: ''
+twitter: ~
 url: http://bogart.gulbcs.org/?cat=5&feed=rss2

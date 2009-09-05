@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: juan_pablo_tapia
-message: ''
+message: ~
 name: Juan Pablo Tapia
-twitter: ''
+twitter: ~
 url: http://linpodcast.com/juampa/?feed=rss2

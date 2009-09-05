@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/miguel.png
 filename: miguel_de_icaza
-message: ''
+message: ~
 name: Miguel de Icaza
-twitter: ''
+twitter: ~
 url: http://tirania.org/blog/miguel.rss2

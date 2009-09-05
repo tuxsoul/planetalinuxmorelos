@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/blacknash.png
 filename: josu_guti_rrez
-message: ''
+message: ~
 name: "Josu\xC3\xA9 Guti\xC3\xA9rrez"
-twitter: ''
+twitter: ~
 url: http://blacknash.com.mx/blog/feed/development

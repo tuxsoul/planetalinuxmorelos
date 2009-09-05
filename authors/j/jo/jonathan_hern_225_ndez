@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/ion.png
 filename: jonathan_hern_225_ndez
-message: ''
+message: ~
 name: Jonathan Hern&#225;ndez
-twitter: ''
+twitter: ~
 url: http://feeds.feedburner.com/ion

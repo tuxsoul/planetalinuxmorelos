@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: mois_s_silva
-message: ''
+message: ~
 name: "Mois\xC3\xA9s Silva"
-twitter: ''
+twitter: ~
 url: http://www.moythreads.com/wordpress/feed/

@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: otro_podcast_sobre_linux
-message: ''
+message: ~
 name: Otro Podcast Sobre Linux
 portal: 1
-twitter: ''
+twitter: ~
 url: http://feeds.feedburner.com/OtroPodcastSobreLinux

@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/max.png
 filename: max_de_mendiz_225_bal
-message: ''
+message: ~
 name: Max de Mendiz&#225;bal
-twitter: ''
+twitter: ~
 url: http://negrabarba.blogspot.com/atom.xml

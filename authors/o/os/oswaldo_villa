@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: oswaldo_villa
-message: ''
+message: ~
 name: Oswaldo Villa
-twitter: ''
+twitter: ~
 url: http://villatux.blogspot.com/feeds/posts/default

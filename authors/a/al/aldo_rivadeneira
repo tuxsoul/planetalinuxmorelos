@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: aldo_rivadeneira
-message: ''
+message: ~
 name: Aldo Rivadeneira
-twitter: ''
+twitter: ~
 url: http://zerver.wordpress.com/feed/?cat=610

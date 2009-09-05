@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: iv_225_n_jaimes
-message: ''
+message: ~
 name: Iv&#225;n Jaimes
-twitter: ''
+twitter: ~
 url: http://www.iver.com.mx/data/xml/blog.rss

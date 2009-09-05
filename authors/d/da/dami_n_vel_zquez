@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: dami_n_vel_zquez
-message: ''
+message: ~
 name: "Dami\xC3\xA1n Vel\xC3\xA1zquez"
-twitter: ''
+twitter: ~
 url: http://feeds2.feedburner.com/Tuxkaoz

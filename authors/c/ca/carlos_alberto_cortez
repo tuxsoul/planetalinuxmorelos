@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: carlos_alberto_cortez
-message: ''
+message: ~
 name: Carlos Alberto Cortez
-twitter: ''
+twitter: ~
 url: http://feeds.feedburner.com/carlos

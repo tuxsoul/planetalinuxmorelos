@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: jos_luis_moreno_g_
-message: ''
+message: ~
 name: "Jos\xC3\xA9 Luis Moreno G."
-twitter: ''
+twitter: ~
 url: http://akheron-linux.com/?feed=rss2

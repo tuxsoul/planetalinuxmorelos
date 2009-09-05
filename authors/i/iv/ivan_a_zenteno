@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/k001.png
 filename: ivan_a_zenteno
-message: ''
+message: ~
 name: Ivan A. Zenteno
-twitter: ''
+twitter: ~
 url: http://k001operator.info/blog/feed/

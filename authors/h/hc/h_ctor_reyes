@@ -1,11 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
-face: mx/hreyes.png
 filename: h_ctor_reyes
-message: ''
+message: ~
 name: "H\xC3\xA9ctor Reyes"
-twitter: ''
-url: http://my.opera.com/hreyes/xml/rss/blog/Linux
+twitter: ~
+url: http://birkoffk.blogspot.com/feeds/posts/default

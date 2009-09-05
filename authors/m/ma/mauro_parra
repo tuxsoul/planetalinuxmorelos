@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/mauro.png
 filename: mauro_parra
-message: ''
+message: ~
 name: Mauro Parra
-twitter: ''
+twitter: ~
 url: http://www.livejournal.com/users/mauropm/data/rss

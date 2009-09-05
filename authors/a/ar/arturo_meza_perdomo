@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: arturo_meza_perdomo
-message: ''
+message: ~
 name: Arturo Meza Perdomo
-twitter: ''
+twitter: ~
 url: http://spike23.blogspot.com/atom.xml

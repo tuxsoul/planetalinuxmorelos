@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/patux.png
 filename: ger_nimo_orozco
-message: ''
+message: ~
 name: "Ger\xC3\xB3nimo Orozco"
-twitter: ''
+twitter: ~
 url: http://patux.net/blog/rss.php

@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: gonzalo_antonio_sosa_m_
-message: ''
+message: ~
 name: Gonzalo Antonio Sosa M.
-twitter: ''
+twitter: ~
 url: http://www.serializing.net/data/xml/blog.SoftwareLibre.rss

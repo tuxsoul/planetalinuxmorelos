@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: fernando_g_mez
-message: ''
+message: ~
 name: "Fernando G\xC3\xB3mez"
-twitter: ''
+twitter: ~
 url: http://fedoreando.wordpress.com/feed/atom/

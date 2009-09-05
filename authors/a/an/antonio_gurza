@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: antonio_gurza
-message: ''
+message: ~
 name: Antonio Gurza
-twitter: ''
+twitter: ~
 url: http://zerialkiller.h4ck3rx.org/?feed=rss2

@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/hbautista.png
 filename: h_ctor_bautista
-message: ''
+message: ~
 name: "H\xC3\xA9ctor Bautista"
-twitter: ''
+twitter: ~
 url: http://feeds.feedburner.com/hbautista

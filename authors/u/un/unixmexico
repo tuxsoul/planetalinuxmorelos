@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: unixmexico
-message: ''
+message: ~
 name: UNIXMEXICO
 portal: 1
-twitter: ''
+twitter: ~
 url: http://unixmexico.org/backend.php

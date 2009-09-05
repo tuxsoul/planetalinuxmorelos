@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: enrique_gpe_rodriguez
-message: ''
+message: ~
 name: Enrique Gpe. Rodriguez
-twitter: ''
+twitter: ~
 url: http://www.thekiken.com/bgs/?feed=rss2

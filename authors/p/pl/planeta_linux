@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/pmx.png
 filename: planeta_linux
-message: ''
+message: ~
 name: Planeta Linux
-twitter: ''
+twitter: ~
 url: http://planetalinuxblog.blogspot.com/atom.xml

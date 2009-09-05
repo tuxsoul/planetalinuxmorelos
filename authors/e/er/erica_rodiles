@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: erica_rodiles
-message: ''
+message: ~
 name: Erica Rodiles
-twitter: ''
+twitter: ~
 url: http://kriemhild.org/blog/feed/rss.xml

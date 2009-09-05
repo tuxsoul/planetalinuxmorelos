@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/vendetta.png
 filename: carlos_augusto_lozano
-message: ''
+message: ~
 name: Carlos Augusto Lozano
-twitter: ''
+twitter: ~
 url: http://www.belindofan.com.ar/?module=blog&action=feed&category=tech

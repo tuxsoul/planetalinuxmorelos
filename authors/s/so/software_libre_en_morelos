@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: software_libre_en_morelos
-message: ''
+message: ~
 name: Software Libre en Morelos
 portal: 1
-twitter: ''
+twitter: ~
 url: http://www.softwarelibremorelos.org/feed

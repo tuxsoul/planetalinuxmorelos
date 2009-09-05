@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/rive.png
 filename: c_233_sar_espino
-message: ''
+message: ~
 name: C&#233;sar Espino
-twitter: ''
+twitter: ~
 url: http://www.riveonline.com/data/xml/blog.Linux.atom

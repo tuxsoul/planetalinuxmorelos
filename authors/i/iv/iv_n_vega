@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: iv_n_vega
-message: ''
+message: ~
 name: "Iv\xC3\xA1n Vega"
-twitter: ''
+twitter: ~
 url: http://feeds.feedburner.com/MiViajeEnTren

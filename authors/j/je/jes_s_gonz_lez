@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/tachi.png
 filename: jes_s_gonz_lez
-message: ''
+message: ~
 name: "Jes\xC3\xBAs Gonz\xC3\xA1lez"
-twitter: ''
+twitter: ~
 url: http://tachiblog.com.mx/category/linux/feed/

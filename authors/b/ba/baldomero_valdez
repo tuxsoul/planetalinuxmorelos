@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: baldomero_valdez
-message: ''
+message: ~
 name: Baldomero Valdez
-twitter: ''
+twitter: ~
 url: http://blog.baldiyo.com/rss_IT.xml

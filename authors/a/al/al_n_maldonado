@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: al_n_maldonado
-message: ''
+message: ~
 name: "Al\xC3\xA1n Maldonado"
-twitter: ''
+twitter: ~
 url: http://aprendizdelinux.com/category/software/feed/

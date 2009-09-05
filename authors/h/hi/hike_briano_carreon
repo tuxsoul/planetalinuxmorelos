@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/hbriano.png
 filename: hike_briano_carreon
-message: ''
+message: ~
 name: Hike Briano Carreon
-twitter: ''
+twitter: ~
 url: http://hdesu.wordpress.com/category/linux/feed

@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: abraham_zenteno
-message: ''
+message: ~
 name: Abraham Zenteno
-twitter: ''
+twitter: ~
 url: http://abzenteno.blogspot.com/feeds/posts/default

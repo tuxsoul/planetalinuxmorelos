@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/renich.png
 filename: renich_bon_ciric
-message: ''
+message: ~
 name: Renich Bon Ciric
-twitter: ''
+twitter: ~
 url: http://blog.woralelandia.com/tag/gnu-linux/feed/

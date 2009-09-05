@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: gabriel_salda_a
-message: ''
+message: ~
 name: "Gabriel Salda\xC3\xB1a"
-twitter: ''
+twitter: ~
 url: http://blog.nethazard.net/category/linux/feed

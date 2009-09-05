@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: marco_antonio_manzo
-message: ''
+message: ~
 name: Marco Antonio Manzo
-twitter: ''
+twitter: ~
 url: http://unixmonkeys.com/amnesiac/blog/data/xml/blog.rss

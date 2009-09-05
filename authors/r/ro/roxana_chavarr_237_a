@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/shermie.png
 filename: roxana_chavarr_237_a
-message: ''
+message: ~
 name: Roxana Chavarr&#237;a
-twitter: ''
+twitter: ~
 url: http://feeds.feedburner.com/RoxanasBlog

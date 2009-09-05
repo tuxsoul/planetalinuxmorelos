@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/billy.png
 filename: william_vera
-message: ''
+message: ~
 name: William Vera
-twitter: ''
+twitter: ~
 url: http://billy.com.mx/feed/atom/

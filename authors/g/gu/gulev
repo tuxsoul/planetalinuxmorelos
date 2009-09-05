@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: gulev
-message: ''
+message: ~
 name: GULEV
 portal: 1
-twitter: ''
+twitter: ~
 url: http://www.gulev.org.mx/rss.xml

@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/ricmen.png
 filename: ricardo_mendoza
-message: ''
+message: ~
 name: Ricardo Mendoza
-twitter: ''
+twitter: ~
 url: http://www.ricmen.glufca.com/?feed=rss2&cat=13

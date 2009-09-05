@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: h_ctor_daniel_cort_s
-message: ''
+message: ~
 name: "H\xC3\xA9ctor Daniel Cort\xC3\xA9s"
-twitter: ''
+twitter: ~
 url: http://hdaniel67.blogspot.com/atom.xml

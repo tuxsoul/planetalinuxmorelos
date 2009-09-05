@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: enrique_g_mez
-message: ''
+message: ~
 name: "Enrique G\xC3\xB3mez"
-twitter: ''
+twitter: ~
 url: http://www.wirikuta.org/comala/?feed=rss2&cat=3

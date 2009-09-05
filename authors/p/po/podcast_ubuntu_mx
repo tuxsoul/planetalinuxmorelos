@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: podcast_ubuntu_mx
-message: ''
+message: ~
 name: Podcast Ubuntu-mx
 portal: 1
-twitter: ''
+twitter: ~
 url: http://feeds.feedburner.com/PodcastUbuntu-mx

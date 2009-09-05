@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: gulag
-message: ''
+message: ~
 name: GULAG
 portal: 1
-twitter: ''
+twitter: ~
 url: http://www.gulag.org.mx/rss.xml

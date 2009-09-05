@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: erasmo_g_mez
-message: ''
+message: ~
 name: "Erasmo G\xC3\xB3mez"
-twitter: ''
+twitter: ~
 url: http://feeds.feedburner.com/erasmo

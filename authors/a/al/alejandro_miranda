@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/pooka.png
 filename: alejandro_miranda
-message: ''
+message: ~
 name: Alejandro Miranda
-twitter: ''
+twitter: ~
 url: http://alejandromiranda.org/taxonomy/term/82/all/feed

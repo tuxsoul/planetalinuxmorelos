@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: manuel_r_bade
-message: ''
+message: ~
 name: "Manuel R\xC3\xA1bade"
-twitter: ''
+twitter: ~
 url: http://log.rabade.net/rss

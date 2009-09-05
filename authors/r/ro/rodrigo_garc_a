@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/nibblesmx.png
 filename: rodrigo_garc_a
-message: ''
+message: ~
 name: "Rodrigo Garc\xC3\xADa"
-twitter: ''
+twitter: ~
 url: http://nibblesmx.dimono.com/?feed=rss2

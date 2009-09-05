@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: armando_rodr_guez
-message: ''
+message: ~
 name: "Armando Rodr\xC3\xADguez"
-twitter: ''
+twitter: ~
 url: http://overclocker88.wordpress.com/feed/

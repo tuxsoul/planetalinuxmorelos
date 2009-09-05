@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/lolo.png
 filename: david_valdez
-message: ''
+message: ~
 name: David Valdez
-twitter: ''
+twitter: ~
 url: http://gnuget.org/blog/feed

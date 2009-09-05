@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/jmauricio.png
 filename: mauricio_hern_225_ndez
-message: ''
+message: ~
 name: Mauricio Hern&#225;ndez
-twitter: ''
+twitter: ~
 url: http://djmaucom.blogspot.com/atom.xml

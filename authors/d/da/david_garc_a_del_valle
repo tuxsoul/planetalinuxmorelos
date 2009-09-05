@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/davidgdelvalle.png
 filename: david_garc_a_del_valle
-message: ''
+message: ~
 name: "David Garc\xC3\xADa del Valle"
-twitter: ''
+twitter: ~
 url: http://sylaropen.blogspot.com/feeds/posts/default

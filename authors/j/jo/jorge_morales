@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: jorge_morales
-message: ''
+message: ~
 name: Jorge Morales
-twitter: ''
+twitter: ~
 url: http://jorgemorales.com.mx/feed

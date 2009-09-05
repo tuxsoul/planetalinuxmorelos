@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/planeta.png
 filename: planeta_linux_anuncios
-message: ''
+message: ~
 name: Planeta Linux - Anuncios
-twitter: ''
+twitter: ~
 url: http://blog.planetalinux.org/blog/feed/planeta-linux

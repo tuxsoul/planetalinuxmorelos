@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: jos_roberto_briones_arg_elles
-message: ''
+message: ~
 name: "Jos\xC3\xA9 Roberto Briones Arg\xC3\xBCelles"
-twitter: ''
+twitter: ~
 url: http://www.gigabriones.com/category/linux/feed/atom/

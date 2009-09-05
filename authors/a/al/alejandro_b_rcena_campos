@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/m77.png
 filename: alejandro_b_rcena_campos
-message: ''
+message: ~
 name: "Alejandro B\xC3\xA1rcena Campos"
-twitter: ''
+twitter: ~
 url: http://alejandro.barcena.com.mx/data/xml/blog.GNULinux.atom

@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: c_sar_gonz_lez
-message: ''
+message: ~
 name: "C\xC3\xA9sar Gonz\xC3\xA1lez"
-twitter: ''
+twitter: ~
 url: http://mikiztli.blogspot.com/rss.xml

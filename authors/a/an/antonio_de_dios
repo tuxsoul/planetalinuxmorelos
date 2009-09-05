@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 filename: antonio_de_dios
-message: ''
+message: ~
 name: Antonio de Dios
-twitter: ''
+twitter: ~
 url: http://webadedios.net/modules/wordpress/index.php/feed/linux

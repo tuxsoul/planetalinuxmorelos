@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/radamantis.png
 filename: radamantis_torres
-message: ''
+message: ~
 name: Radamantis Torres
-twitter: ''
+twitter: ~
 url: http://radaman.blogspot.com/feeds/posts/default/-/tech

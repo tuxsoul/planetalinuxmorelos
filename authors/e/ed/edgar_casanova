@@ -1,11 +1,11 @@
 --- 
 countries: 
   - mx
-email: ''
+email: ~
 enabled: 'on'
 face: mx/edmind.png
 filename: edgar_casanova
-message: ''
+message: ~
 name: Edgar Casanova
-twitter: ''
+twitter: ~
 url: http://feeds.feedburner.com/dmindblog
