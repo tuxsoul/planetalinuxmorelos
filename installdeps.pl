@@ -24,7 +24,8 @@ my $modules = [qw!
 !];
 
 for my $m (@$modules) {
-	CPAN::Shell->install( $m );
+	CPAN::Shell->rematein("notest", "install", "$m");
+	# CPAN::Shell->install( $m );
 }
 
 # after that...
