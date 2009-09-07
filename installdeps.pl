@@ -16,7 +16,6 @@ my $modules = [qw!
 	DateTime
 	File::MimeInfo::Simple
 	File::Path
-	Image::Magick
 	Modern::Perl
 	Net::Domain::ES::ccTLD
 	Template
@@ -37,5 +36,9 @@ for my $m (@$modules) {
 	die $@ if $@;
 }
 
-print "\n.. done. enjoy :)\n"
+print "\n.. done. enjoy :)\n";
+print "\n.. please make sure you have PerlMagick installed.\n";
+print ".. the recommended way is: `port install p5-perlmagick` in Mac,\n";
+print ".. ..or 'aptitude install perlmagick' in Debian/Ubuntu.\n\n";
+
 
