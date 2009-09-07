@@ -1,36 +1,10 @@
 New Planeta Linux build system
 ==============================
 
-El nuevo sistema de build de Planeta Linux ha sido mejorado. Son varias
-cosas las que se han cambiado en este nuevo sistema:
+El nuevo sistema de build de Planeta Linux ha sido mejorado.
 
-- El nuevo árbol de git se encuentra bajo axiombox/planetalinux en GitHub.
-- El nuevo árbol es un fork del anterior que se encontraba en
-  damog/planetalinux, entonces cualquier cambio puede ser fácilmente
-  agregable.
-- Nos hemos movido a Venus como motor de los planetas. Venus es un rewrite
-  del anterior Planet con nuevas y mejores cositas.
-- El repositorio contiene ahora el planet.py de Venus por ende se podrá
-  hacer construcción local de planetas con la misma versión en todos lados.
-- Los subdominios se dejarán de usar para dar paso a subdirectorios:
-  mx.planetalinux.org -> planetalinux.org/mx
-  ve.planetalinux.org -> planetalinux.org/ve
-  Ésto se realizará para darle mayor importancia al dominio principal de 
-  Planeta Linux.
-- Un script en Perl genera los templates de cada una de las instancias,
-  ya no existe en realidad el archivo index.html.tmpl: Ese script lo genera
-  cada vez que la producción corre.
-- script/build
-- www
-- new_instance.pl
-
-TODO:
-- Verificar las redireccíones para los subdominios.
-- Ver qué onda con Universo Planeta Linux.
-- Retweets en cada post.
-- Twitter del usuario en cada cabeza.
-- Instalación en servidor.
-- Explicar a fondo cómo utilizar script/build.
+Sin embargo, aún no es completamente usable. Acude a <damog> para
+mayores referencias.
 
 -- 
 David Moreno <david@axiombox.com>
