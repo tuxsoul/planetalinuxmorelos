@@ -1,0 +1,28 @@
+[Planet]
+
+name = Planeta Linux [% country_name %]
+link = http://planetalinux.org/[% country_tld %]
+owner_name = Administradores Planeta Linux
+owner_email = planetalinux@googlegroups.com
+country_tld = [% country_tld %]
+country = [% country_name %]
+
+cache_directory = cache/[% country_tld %]
+new_feed_items = 10
+log_level = DEBUG
+
+template_files = [% tmp_template %] [% rss_template %]
+
+output_dir = www/[% country_tld %]
+
+items_per_page = 10
+date_format = %l:%M %P
+new_date_format = %b %d, %Y
+encoding = utf-8
+
+[DEFAULT]
+face = nobody.png
+[% FOREACH f IN feeds %]
+[[% f.url %]]
+[% FOREACH s IN f %][% s.key %] = [% s.value %]
+[% END %][% END %]

@@ -1,3 +1,6 @@
+tmp/*
+!tmp/README
+*.swp
 *.pyc
 www/*
 !www/README
@@ -8,3 +11,4 @@ venus/planet/*.pyc
 proc/rss20-new.xml.tmplc
 cache/*
 proc/universo/config.ini
+*.tmplc
