@@ -77,6 +77,10 @@ sub run {
 		my $template = $self->template;
 		my $ini = $self->feeds({country => $self->country})->by_country->ini({tmp_template => $template});
 		
+		# hacerlo de una mejor forma?
+		my $venus = dirname(__FILE__).'/../venus/planet.py';
+		`$venus $ini`;
+		
 	}
 }
 
