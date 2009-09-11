@@ -1,3 +1,6 @@
+tmp/*
+!tmp/README
+*.swp
 *.pyc
 www/*
 !www/README
