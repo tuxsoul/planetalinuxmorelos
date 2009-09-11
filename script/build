@@ -35,30 +35,6 @@ while(<$fh>) {
 			});
 			
 			$pl->run;
-			# my $pl = PlanetaLinux->new({
-			# 	instance => $c_id,
-			# });
-			# 
-			# my $ini = $pl->ini({
-			# 	countries => [$c_id]
-			# });
-			# 
-			# # perl calls perl, yay!
-			# say "generating template...";
-			# system("perl", "$dir/../script/gen_template.pl", $c_id) == 0
-			# 	or die "Couldn't generate template for $c_id: $?";
-			# say " done.";
-			# 	
-			# # perl calls python, ew!
-			# say "generating planet...";
-			# system("$dir/../venus/planet.py", "$dir/../proc/$c_id/config.ini") == 0
-			# 	or die "Couldn't generate planet: $?";
-			# say " done.";
-			# 
-			# say "removing template...";
-			# 
-			# system("rm", "-f", "$dir/../proc/$c_id/index.html.tmpl", "$dir/../proc/$c_id/index.html.tmplc") == 0
-			# 	or die "Couldn't remove template: $?";
 				
 			say "done!";
 		}
