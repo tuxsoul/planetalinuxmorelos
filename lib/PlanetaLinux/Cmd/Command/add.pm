@@ -87,7 +87,7 @@ sub execute {
 	my($self, $opt, $args) = @_;
 	
 	my $feed = $opt->{feed};
-	my $pl = PlanetaLinux->new;
+	my $pl = PlanetaLinux::Feeds->new;
 	
 	die "ERR: Feed already exists on authors/ directory.\n"
 		if $pl->does_feed_exist($feed);

@@ -33,6 +33,13 @@ sub new {
 }
 
 sub does_feed_exist {
+	my($self) = shift;
+	my $feed = shift;
+	
+	for my $f ( @{ $self->{_feeds} } ) {
+		return 1 if $feed eq $f->{url}
+	}
+	0;
 	# my($self, $feed) = @_;
 	# 
 	# for my $f ( @{ $self->feeds } ) {
