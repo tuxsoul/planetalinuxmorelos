@@ -18,6 +18,8 @@ open my $fh, "<", $dir."/../config/countries.list"
 
 my $r = {};
 
+my $all = [];
+
 while(<$fh>) {
 	chomp;
 	my $c_id = $_;
@@ -37,8 +39,23 @@ while(<$fh>) {
 			$pl->run;
 				
 			say "done!";
-		}
+		};
+	
+	push @$all, $c_id;
+		
 }
+
+task 'all',
+	"Builds all Planeta Linux instances.",
+	sub {
+		say "running all instances!";
+		my $pl = PlanetaLinux->new({
+			countries => $all,
+		});
+		$pl->run;
+		say "done!!1";
+	};
+
 
 do_tasks();
 
