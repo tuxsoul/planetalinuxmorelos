@@ -12,3 +12,4 @@ proc/rss20-new.xml.tmplc
 cache/*
 proc/universo/config.ini
 *.tmplc
+*.DS_Store
