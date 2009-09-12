@@ -54,6 +54,7 @@ sub analytics_id {
 		return (split ':', $_)[1]
 	}
 	close $fh;
+	return '';
 }
 
 sub country_name {
@@ -106,10 +107,10 @@ sub template {
 	for my $c ( $self->countries ) {
 		push @$countries, {
 			tld => $c,
-			name => find_name_by_cctld($c),
+			name => find_name_by_cctld($c) || die "No country for `$c'",
 		};
 	}
-	
+		
 	$self->{_t}->process('index.html.tmpl', {
 		analytics_id => $self->analytics_id,
 		instance_name => $self->country_name,
