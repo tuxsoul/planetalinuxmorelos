@@ -86,7 +86,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 	
 
 		<div class="author-info">
-			<TMPL_IF channel_face><img class="cabeza" src="../images/cabezas/[% instance_code %]/<TMPL_VAR channel_face ESCAPE="HTML">" alt="<TMPL_VAR channel_name>" title="Hackergotchi de <TMPL_VAR channel_name>" /></TMPL_IF>
+			<TMPL_IF channel_face><img class="cabeza" src="../images/cabezas/<TMPL_VAR channel_face ESCAPE="HTML">" alt="<TMPL_VAR channel_name>" title="Hackergotchi de <TMPL_VAR channel_name>" /></TMPL_IF>
       	<div class="author-description"><p><span><TMPL_VAR channel_name></span><br />
       	<cite><a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="Blog de: <TMPL_VAR channel_name>" class="weblog"><TMPL_VAR channel_title></a></cite>
       	<a href="<TMPL_VAR channel_url ESCAPE="HTML">" title="Feed de: <TMPL_VAR channel_title>" class="feed">feed</a>
