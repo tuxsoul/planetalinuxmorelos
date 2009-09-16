@@ -37,7 +37,7 @@
 		<li id="home"><a href="http://planetalinux.org" title="Planeta Linux | Página Principal">home</a></li>
 		
 		[% FOREACH countries %]
-		<li id="[% tld %]"><a href="../[% tld %]" title="Planeta Linux | [% name %]">[% name %]</a></li>
+		<li id="[% tld %]"[% IF tld == instance_code %] class="current"[% END %]><a href="../[% tld %]" title="Planeta Linux | [% name %]">[% name %]</a></li>
 		[% END %]
 	
       </ul>
