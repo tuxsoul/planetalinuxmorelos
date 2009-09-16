@@ -8,14 +8,16 @@ country_tld = [% country_tld %]
 country = [% country_name %]
 
 cache_directory = cache/[% country_tld %]
-new_feed_items = 10
 log_level = DEBUG
 
 template_files = [% tmp_template %] [% rss_template %]
 
 output_dir = www/[% country_tld %]
 
-items_per_page = 10
+items_per_page = 60
+new_feed_items = 3
+spider_threads = 10
+http_cache_directory = http
 date_format = %l:%M %P
 new_date_format = %b %d, %Y
 encoding = utf-8
