@@ -4,7 +4,7 @@
 <title><TMPL_VAR name></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="../css/main.css" type="text/css" />
-<link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
+<link rel="shortcut icon" type="image/png" href="../images/favicon.ico" />
 <link rel="alternate" type="application/rss+xml" title="Planeta Linux | [% instance_name %]" href="http://feedproxy.google.com/PlanetaLinux[% instance_name_pure.remove('\s+') %]" />
 
 <script type="text/javascript" charset="utf-8">
@@ -21,13 +21,6 @@
   feedback_widget_options.placement = "left";
   feedback_widget_options.color = "#222";
   feedback_widget_options.style = "idea";
-  
-  
-  
-  
-  
-  
-
   var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
 </script>
 
@@ -99,14 +92,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 			<div class="post-inner">
 				<h3 class="entry-title"><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_IF title><TMPL_VAR title><TMPL_ELSE>(Sin Título)</TMPL_IF></a></h3>
 				<div class="entry-content">
-
-				<script type="text/javascript">
-					tweetmeme_url = '<TMPL_VAR link ESCAPE="HTML">';
-					tweetmeme_source = 'planetalinux';
-				</script>
-
-				<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
-				<br />
 
 				<TMPL_VAR content>
 				
