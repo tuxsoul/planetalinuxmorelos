@@ -10,6 +10,7 @@ use App::PPBuild;
 use Net::Domain::ES::ccTLD;
 use PlanetaLinux;
 use Data::Dumper;
+use File::Path qw/remove_tree/;
 
 my $dir = dirname(__FILE__);
 
@@ -54,6 +55,20 @@ task 'all',
 		});
 		$pl->run;
 		say "done!!1";
+	};
+
+task 'flush',
+	"Flushes the Planeta Linux cache.",
+	sub  {
+		say "flushing the cache toilet!";
+		my $cache_dir = dirname(__FILE__).'/../cache';
+		opendir my $dh, $cache_dir or die "couldn't open dir";
+		for my $d ( readdir($dh) ) {
+			next unless $d =~ /^[a-z]{2}$/;
+			next unless -d "$cache_dir/$d";
+			remove_tree "$cache_dir/$d";
+		}
+		say "done !";
 	};
 
 
