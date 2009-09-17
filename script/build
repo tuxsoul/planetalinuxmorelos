@@ -71,6 +71,29 @@ task 'flush',
 		say "done !";
 	};
 
+task 'www',
+	"Builds the static files for Planeta Linux",
+	sub {
+		my $t = Template->new(
+			INCLUDE_PATH => dirname(__FILE__).'/../template/www',
+			OUTPUT_PATH => dirname(__FILE__).'/../www',
+			PRE_PROCESS => 'header.tt',
+			POST_PROCESS => 'footer.tt'
+		) || die Template->error();
+		
+		my $pl = PlanetaLinux->new;
+		
+		$t->process('index.tt', {
+			countries => [$pl->countries], 
+		}, 'index.html') || die $t->error();
+		
+		my @templates = qw/lineamientos faq contacto banners creditos/;
+		# 
+		for my $temp ( @templates ) {
+		 	$t->process("$temp.tt", {}, "$temp.html") or die $t->error;
+		 }
+	};
+
 
 do_tasks();
 
