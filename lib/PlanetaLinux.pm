@@ -79,6 +79,9 @@ sub run {
 		my $ini = $self->feeds({country => $self->country})->by_country->ini({tmp_template => $template});
 				
 		my $dir = dirname(__FILE__).'/../';
+		
+		mkdir "$dir/cache/$country";
+
 		`find $dir -type f -name "*.tmplc" -exec rm -f '{}' \\;`;
 		
 		# hacerlo de una mejor forma?
