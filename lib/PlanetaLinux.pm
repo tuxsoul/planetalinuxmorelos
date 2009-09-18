@@ -80,7 +80,7 @@ sub run {
 				
 		my $dir = dirname(__FILE__).'/../';
 		
-		mkdir "$dir/cache/$country";
+		mkdir "$dir/cache/$c";
 
 		`find $dir -type f -name "*.tmplc" -exec rm -f '{}' \\;`;
 		
