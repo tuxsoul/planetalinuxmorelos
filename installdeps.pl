@@ -8,7 +8,6 @@ use CPAN;
 die "You better run this bitch under perl 5.10 or newer.\n"
   unless $] >= 5.010;
 
-
 die "You better run this as root.\n"
 	unless $< == 0;
 
