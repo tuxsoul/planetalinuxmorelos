@@ -3,6 +3,8 @@
 use strict;
 use warnings;
 
+$ENV{'PERL_MM_USE_DEFAULT'} = 1; # for non-prompting
+
 use CPAN;
 
 die "You better run this bitch under perl 5.10 or newer.\n"
