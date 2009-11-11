@@ -1,11 +1,13 @@
 --- 
 countries: 
   - mx
-email: ~
+  - ve
+  - es
+email: david@axiombox.com
 enabled: 'on'
 face: mx/damog.png
 filename: david_moreno
 message: ~
 name: David Moreno
-twitter: ~
-url: http://log.damog.net/category/planeta-linux/feed
+twitter: damog
+url: http://stereonaut.net/category/planeta-linux/feed/atom/
