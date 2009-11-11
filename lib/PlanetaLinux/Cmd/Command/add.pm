@@ -98,9 +98,7 @@ sub execute {
 	if($val->is_valid) {
 		# say "Valid feed."
 	} else {
-		print Dumper $val->errors;
-		print Dumper $val->warnings;
-		die "Invalid file. Aborting.\n";
+		die "Invalid feed. Aborting.\n";
 	}
 	
 	$self->_add_feed($opt, $args);
