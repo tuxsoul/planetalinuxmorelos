@@ -21,7 +21,7 @@
     
 <fieldset id="recuadro2">
 	<legend><a href="#Unirse" name="Unirse">¿Cómo me uno?</a></legend>
-      <p>Puedes abrir un requerimiento nuevo en <a href="http://github.com/axiombox/planetalinux/issues">nuestra página de requerimientos en GitHub</a>. <strong>Por favor, escribe tu nombre completo, URL del blog, URL del feed e indica la instancia del país donde quieres aparecer (México, Venezuela, Chile, etc)</strong>. Antes de cualquier cosa, asegúrate de leer nuestros <a href="lineamientos.php">lineamientos</a>.</p>
+      <p>Puedes abrir un requerimiento nuevo en <a href="http://github.com/axiombox/planetalinux/issues">nuestra página de requerimientos en GitHub</a>. <strong>Por favor, escribe tu nombre completo, URL del blog, URL del feed e indica la instancia del país donde quieres aparecer (México, Venezuela, Chile, etc) por medio de las etiquetas del lado derecho</strong>. Antes de cualquier cosa, asegúrate de leer nuestros <a href="lineamientos.php">lineamientos</a>.</p>
 </fieldset>
 
 <fieldset id="recuadro2">
