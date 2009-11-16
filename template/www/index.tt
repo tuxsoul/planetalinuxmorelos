@@ -4,7 +4,7 @@
 		<div id="banderas" align="center">
 		
 		[% FOREACH c IN countries %]
-		<a href="http://planetalinux.org/[% c %]"><img src="images/banderas/[% c %].png"></a>
+		<a href="[% c %]/index.html"><img src="images/banderas/[% c %].png"></a>
 		[% END %]
 
 		</div>
