@@ -2,9 +2,9 @@
 countries: 
   - mx
 email: ~
-enabled: 'on'
+enabled: 'off'
 filename: gulag
-message: ~
+message: "Feed with fecha en el futuro"
 name: GULAG
 portal: 1
 twitter: ~
