@@ -22,6 +22,7 @@ my $modules = [qw!
 	File::MimeInfo::Simple
 	File::Path
 	Modern::Perl
+	Module::Build
 	Net::Domain::ES::ccTLD
 	Template
 	WebService::Validator::Feed::W3C
