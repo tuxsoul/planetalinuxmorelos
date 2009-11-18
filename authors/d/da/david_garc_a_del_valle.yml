@@ -3,7 +3,7 @@ countries:
   - mx
 email: ~
 enabled: 'on'
-face: mx/davidgdelvalle.png
+#face: mx/davidgdelvalle.png
 filename: david_garc_a_del_valle
 message: ~
 name: "David Garc\xC3\xADa del Valle"
