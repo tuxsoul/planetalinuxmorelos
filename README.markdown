@@ -7,5 +7,4 @@ Sin embargo, aún no es completamente usable. Acude a <damog> para
 mayores referencias.
 
 - - -
-David Moreno <david@axiombox.com>
-http://damog.net/
+David Moreno <david@axiombox.com> <http://damog.net/>
