@@ -74,12 +74,15 @@ sub validate_args {
 		
 		if($opt->{hackergotchi} =~ m!^http://!) {
 			my ($fh, $filename) = tempfile();
-			getstore($opt->{hackergotchi}, $filename);
+			(getstore($opt->{hackergotchi}, $filename) =~ /^2\d{2}$/)
+				|| $self->usage_error("fetching $opt->{hackergotchi} wasn't successful.");
 			$opt->{hackergotchi} = $filename;
 		}
 
 		$self->usage_error("$opt->{hackergotchi} doesn't seem to exist.")
 			unless -r $opt->{hackergotchi};
+		$self->usage_error("$opt->{hackergotchi} doesn't look like an image.")
+			unless mimetype($opt->{hackergotchi}) =~ m!^image/!;
 	}
 	
 	$self->usage_error("Wrong countries format: $opt->{countries}.")
