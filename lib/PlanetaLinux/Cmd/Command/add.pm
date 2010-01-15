@@ -9,6 +9,8 @@ use Data::Validate::Email qw(is_email);
 use File::Path 'make_path';
 use File::MimeInfo::Simple;
 use YAML::Syck;
+use LWP::Simple;
+use File::Temp qw/tempfile/;
 use Image::Magick;
 
 sub opt_spec {
@@ -69,6 +71,13 @@ sub validate_args {
 		unless is_email($opt->{email});
 	
 	if($opt->{hackergotchi}) {
+		
+		if($opt->{hackergotchi} =~ m!^http://!) {
+			my ($fh, $filename) = tempfile();
+			getstore($opt->{hackergotchi}, $filename);
+			$opt->{hackergotchi} = $filename;
+		}
+
 		$self->usage_error("$opt->{hackergotchi} doesn't seem to exist.")
 			unless -r $opt->{hackergotchi};
 	}
