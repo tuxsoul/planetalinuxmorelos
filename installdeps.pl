@@ -15,7 +15,7 @@ die "You better run this as root.\n"
 
 my $modules = [qw!
 	App::Cmd
-	App::PPBuild
+	App::Build
 	Config::IniFiles
 	Data::Validate::Email
 	DateTime
