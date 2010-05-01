@@ -107,11 +107,13 @@ sub execute {
 	my $val = WebService::Validator::Feed::W3C->new;
 	my $ok = $val->validate(uri => $feed);	
 	
-	if($val->is_valid) {
-		# say "Valid feed."
-	} else {
-		die "Invalid feed. Aborting.\n";
-	}
+	if($ok){
+    if($val->errorcount == 0) {
+      say "Valid feed."
+    }
+  } else {
+    die "Invalid feed. Aborting.\n";
+  }
 	
 	$self->_add_feed($opt, $args);
 }
