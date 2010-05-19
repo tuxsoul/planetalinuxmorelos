@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - ar
+email: usemoslinux@gmail.com
+enabled: 'on'
+filename: usemos_linux.yml
+message: ~
+name: Usemos Linux
+portal: 1
+twitter: ~
+url: http://feeds.feedburner.com/usemoslinux
