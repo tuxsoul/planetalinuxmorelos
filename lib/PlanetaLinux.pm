@@ -60,7 +60,12 @@ sub analytics_id {
 sub country_name {
 	my($self) = shift;
 		
-	find_name_by_cctld( $self->country );
+	my $name = find_name_by_cctld( $self->country );
+	if($name) {
+		return $name;
+	} else {
+		return 'universo' if $self->country eq 'universo';
+	}
 }
 
 sub run {
@@ -76,7 +81,13 @@ sub run {
 			unless $self->is_country_supported;
 		
 		my $template = $self->template;
-		my $ini = $self->feeds({country => $self->country})->by_country->ini({tmp_template => $template});
+		
+		my $ini;
+		if($self->country eq 'universo') {
+			$ini = $self->feeds({country => $self->country})->ini({tmp_template => $template});
+		} else {
+			$ini = $self->feeds({country => $self->country})->by_country->ini({tmp_template => $template});
+		}
 				
 		my $dir = dirname(__FILE__).'/../';
 		
@@ -112,9 +123,17 @@ sub template {
 	my $countries = [];
 	
 	for my $c ( $self->countries ) {
+		my $name = find_name_by_cctld($c);
+		unless($name) {
+			if($c eq 'universo') {
+				$name = $c;
+			} else {
+				die "No country for $c";
+			}
+		}
 		push @$countries, {
 			tld => $c,
-			name => find_name_by_cctld($c) || die "No country for `$c'",
+			name => $name,
 		};
 	}
 		

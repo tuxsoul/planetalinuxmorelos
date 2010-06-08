@@ -1,6 +1,7 @@
 --- 
 countries: 
   - ve
+  - ec
 email: ~
 enabled: 'on'
 face: ve/bureado.png
