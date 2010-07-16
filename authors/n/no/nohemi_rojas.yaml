@@ -3,6 +3,7 @@ countries:
   - ve
 email: nohemir@gmail.com
 enabled: 'on'
+face: ve/nohemi.png
 filename: nohemi_rojas.yml
 message: ~
 name: Nohemi Rojas
