@@ -2,7 +2,7 @@
 countries: 
   - mx
 email: ~
-enabled: 'on'
+enabled: 'off'
 face: mx/mauro.png
 filename: mauro_parra
 message: ~
