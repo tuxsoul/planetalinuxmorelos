@@ -3,6 +3,7 @@ countries:
   - es
 email: frannoe@gmail.com
 enabled: 'on'
+face: es/franciscol.png
 filename: francisco_luque.yml
 message: ~
 name: Francisco Luque
