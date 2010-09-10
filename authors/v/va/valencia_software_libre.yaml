@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - ve
+email: webmaster@vaslibre.org.ve
+enabled: 'on'
+filename: valencia_software_libre.yml
+message: ~
+name: Valencia Software Libre
+portal: 1
+twitter: ~
+url: http://www.vaslibre.org.ve/backend.php
