@@ -3,6 +3,7 @@ countries:
   - cr
 email: ~
 enabled: 'on'
+face: ve/rolnadov.png
 filename: rolando_valverde
 message: ~
 name: Rolando Valverde
