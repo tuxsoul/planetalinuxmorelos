@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - mx
+email: podcast@openenchilada.com
+enabled: 'on'
+filename: the_open_enchilada_project.yml
+message: ~
+name: The Open Enchilada Project
+portal: 1
+twitter: ~
+url: http://www.openenchilada.com/feed/
