@@ -3,6 +3,7 @@ countries:
   - ve
 email: 3d0rr@edwinorrico.net.ve
 enabled: 'on'
+face: ve/edwinorrico.png
 filename: edwin_orrico.yml
 message: ~
 name: Edwin Orrico
