@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - ve
+email: superubuntu@gmail.com
+enabled: 'on'
+filename: superubuntu.yml
+message: ~
+name: superubuntu
+portal: 1
+twitter:superubuntu
+url: http://www.superubuntu.com/category/planetalinux/feed/atom
