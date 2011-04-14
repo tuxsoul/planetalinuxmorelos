@@ -3,7 +3,7 @@ countries:
   - es
 email: pico.dev@gmail.com
 enabled: 'on'
-face: es/damog.png
+face: ~
 filename: david_gonzales
 message: ~
 name: David Gonzales
