@@ -3,13 +3,6 @@
 use strict;
 use warnings;
 
-$ENV{'PERL_MM_USE_DEFAULT'} = 1; # for non-prompting
-
-use CPAN;
-
-die "You better run this bitch under perl 5.10 or newer.\n"
-  unless $] >= 5.010;
-
 die "You better run this as root.\n"
 	unless $< == 0;
 
@@ -30,8 +23,8 @@ my $modules = [qw!
 !];
 
 for my $m (@$modules) {
-	CPAN::Shell->rematein("notest", "install", "$m");
-	# CPAN::Shell->install( $m );
+	system("cpanm", $m) == 0
+		or die "Couldn't run cpanm properly (is it installed?): $?";
 }
 
 # after that...
