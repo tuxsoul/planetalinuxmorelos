@@ -186,6 +186,12 @@ sub _add_feed {
 	}
 	say ".. writing yaml to: $yaml";
 	DumpFile($yaml, $s);
+	
+	say ".. running `git add` on the newly created file.";
+	unless(system('git', 'add', $yaml) == 0) {
+		say ".. ERROR: git add failed with the following message: $?";
+		say ".. Please fix the issue and add the file manually.";
+	}
 
 	say "";
 	say '`\o done `\o';
