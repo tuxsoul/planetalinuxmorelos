@@ -1,8 +1,18 @@
 --- 
-countries: 
-  - mx
-  - ve
+countries:
+  - ar
+  - cl
+  - co
+  - cr
+  - ec
   - es
+  - gt
+  - mx
+  - ni
+  - pa
+  - pe
+  - sv
+  - ve 
 email: david@axiombox.com
 enabled: 'on'
 face: mx/damog.png
