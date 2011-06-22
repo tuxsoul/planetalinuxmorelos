@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - es
+email: picajoso@tpnet.es
+enabled: 'on'
+filename: muylinux.yml
+message: ~
+name: MuyLinux
+portal: 1
+twitter: ~
+url: http://www.muylinux.com/gnulinux/feed/atom/
