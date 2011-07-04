@@ -2,7 +2,7 @@
 countries: 
   - es
 email: picajoso@tpnet.es
-enabled: 'on'
+enabled: 'off'
 filename: muylinux.yml
 message: ~
 name: MuyLinux
