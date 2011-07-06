@@ -3,6 +3,7 @@ countries:
   - mx
 email: siddharta@sidd.homelinux.net
 enabled: 'on'
+face: mx/siddharta.png
 filename: siddharta_buda.yml
 message: ~
 name: Siddharta Buda
