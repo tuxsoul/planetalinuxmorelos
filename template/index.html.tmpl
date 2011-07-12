@@ -127,13 +127,48 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 	<p>Entérate de las noticias que suceden alrededor de Planeta Linux siguiendo nuestro <a href="http://blog.planetalinux.org">blog</a>.</p> -->
 	
 	<h3 class="sidebartitle">Facebook</h3>
-	<p>
-		<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fplanetalinux&amp;width=200&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=true&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:62px;" allowTransparency="true"></iframe>
+	<p align="center"><center>
+		<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/planetalinux" width="200" show_faces="true" border_color="" stream="false" header="true"></fb:like-box>
+		</center>
 	</p>
 	
 	
 	<h3 class="sidebartitle">Twitter</h3>
-	<p><a href="http://twitter.com/planetalinux">Sigue el Twitter de Planeta Linux.</a></p>
+	<p align="center">
+		<center>
+			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+			<script>
+			new TWTR.Widget({
+			  version: 2,
+			  type: 'profile',
+			  rpp: 4,
+			  interval: 6000,
+			  width: 200,
+			  height: 300,
+			  theme: {
+			    shell: {
+			      background: '#9bbcf5',
+			      color: '#121212'
+			    },
+			    tweets: {
+			      background: '#ffffff',
+			      color: '#000000',
+			      links: '#0633ba'
+			    }
+			  },
+			  features: {
+			    scrollbar: false,
+			    loop: false,
+			    live: false,
+			    hashtags: true,
+			    timestamp: true,
+			    avatars: true,
+			    behavior: 'all'
+			  }
+			}).render().setUser('planetalinux').start();
+			</script>
+		</center>
+	</p>
 
 	<h3 class="sidebartitle">identi.ca</h3>
 	<p>Actualizaciones de Planeta Linux también en <a href="http://identi.ca/planetalinux">identi.ca</a>.</p>
