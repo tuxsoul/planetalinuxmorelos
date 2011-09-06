@@ -3,6 +3,7 @@ countries:
   - ni
 email: ~
 enabled: 'on'
+face: ni/n0rman.png
 filename: norman_garcia_aguilar
 message: ~
 name: Norman Garcia Aguilar
