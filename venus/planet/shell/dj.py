@@ -19,6 +19,7 @@ def run(script, doc, output_file=None, options={}):
     # I need to re-import the settings at every call because I have to 
     # set the TEMPLATE_DIRS variable programmatically
     from django.conf import settings
+    settings._wrapped=None
     try:
         settings.configure(
             DEBUG=True, TEMPLATE_DEBUG=True, 
@@ -31,7 +32,7 @@ def run(script, doc, output_file=None, options={}):
 
     # set up the Django context by using the default htmltmpl 
     # datatype converters
-    context = Context()
+    context = Context(autoescape=(config.django_autoescape()=='on'))
     context.update(tmpl.template_info(doc))
     context['Config'] = config.planet_options()
     t = get_template(script)

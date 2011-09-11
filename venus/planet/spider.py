@@ -69,6 +69,7 @@ def _is_http_uri(uri):
 def writeCache(feed_uri, feed_info, data):
     log = planet.logger
     sources = config.cache_sources_directory()
+    blacklist = config.cache_blacklist_directory()
 
     # capture http status
     if not data.has_key("status"):
@@ -125,7 +126,7 @@ def writeCache(feed_uri, feed_info, data):
         log.info("Updating feed %s", feed_uri)
 
     # if read failed, retain cached information
-    if not data.version and feed_info.version:
+    if not data.get('version') and feed_info.get('version'):
         data.feed = feed_info.feed
         data.bozo = feed_info.feed.get('planet_bozo','true') == 'true'
         data.version = feed_info.feed.get('planet_format')
@@ -147,7 +148,7 @@ def writeCache(feed_uri, feed_info, data):
             data.feed['planet_content_hash'] = data.headers['-content-hash']
 
     # capture feed and data from the planet configuration file
-    if data.version:
+    if data.get('version'):
         if not data.feed.has_key('links'): data.feed['links'] = list()
         feedtype = 'application/atom+xml'
         if data.version.startswith('rss'): feedtype = 'application/rss+xml'
@@ -175,7 +176,9 @@ def writeCache(feed_uri, feed_info, data):
         # generate an id, if none is present
         if not entry.has_key('id') or not entry.id:
             entry['id'] = reconstitute.id(None, entry)
-            if not entry['id']: continue
+        elif hasattr(entry['id'], 'values'):
+            entry['id'] = entry['id'].values()[0]
+        if not entry['id']: continue
 
         # determine updated date for purposes of selection
         updated = ''
@@ -189,6 +192,13 @@ def writeCache(feed_uri, feed_info, data):
     # write each entry to the cache
     cache = config.cache_directory()
     for updated, entry in ids.values():
+
+        # compute blacklist file name based on the id
+        blacklist_file = filename(blacklist, entry.id)  
+
+        # check if blacklist file exists. If so, skip it. 
+        if os.path.exists(blacklist_file):
+           continue
 
         # compute cache file name based on the id
         cache_file = filename(cache, entry.id)
@@ -420,8 +430,6 @@ def spiderPlanet(only_if_new = False):
     # Process the results as they arrive
     feeds_seen = {}
     while fetch_queue.qsize() or parse_queue.qsize() or threads:
-        while parse_queue.qsize() == 0 and threads:
-            time.sleep(0.1)
         while parse_queue.qsize():
             (uri, feed_info, feed) = parse_queue.get(False)
             try:
@@ -478,6 +486,8 @@ def spiderPlanet(only_if_new = False):
                 for line in (traceback.format_exception_only(type, value) +
                     traceback.format_tb(tb)):
                     log.error(line.rstrip())
+
+        time.sleep(0.1)
 
         for index in threads.keys():
             if not threads[index].isAlive():

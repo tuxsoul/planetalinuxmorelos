@@ -105,6 +105,8 @@ def __init__():
     define_planet('output_theme', '')
     define_planet('output_dir', 'output')
     define_planet('spider_threads', 0) 
+    define_planet('pubsubhubbub_hub', '')
+    define_planet_list('pubsubhubbub_feeds', 'atom.xml rss10.xml rss20.xml')
 
     define_planet_int('new_feed_items', 0) 
     define_planet_int('feed_timeout', 20)
@@ -114,6 +116,7 @@ def __init__():
     define_planet_list('bill_of_materials')
     define_planet_list('template_directories', '.')
     define_planet_list('filter_directories')
+    define_planet('django_autoescape', 'on')
 
     # template options
     define_tmpl_int('days_per_page', 0)
@@ -131,11 +134,11 @@ def __init__():
     define_tmpl('filter', None) 
     define_tmpl('exclude', None) 
 
-def load(config_file):
+def load(config_files):
     """ initialize and load a configuration"""
     global parser
     parser = ConfigParser()
-    parser.read(config_file)
+    parser.read(config_files)
 
     import config, planet
     from planet import opml, foaf, csv_config
@@ -154,8 +157,11 @@ def load(config_file):
                 dirs = config.template_directories()
                 if theme_dir not in dirs:
                     dirs.append(theme_dir)
-                if os.path.dirname(config_file) not in dirs:
-                    dirs.append(os.path.dirname(config_file))
+                if not hasattr(config_files, 'append'):
+                    config_files = [config_files]
+                for config_file in config_files:
+                    if os.path.dirname(config_file) not in dirs:
+                        dirs.append(os.path.dirname(config_file))
 
                 # read in the theme
                 parser = ConfigParser()
@@ -169,7 +175,7 @@ def load(config_file):
                 # merge configurations, allowing current one to override theme
                 template_files = config.template_files()
                 parser.set('Planet','template_files','')
-                parser.read(config_file)
+                parser.read(config_files)
                 for file in config.bill_of_materials():
                     if not file in bom: bom.append(file)
                 parser.set('Planet', 'bill_of_materials', ' '.join(bom))
@@ -303,7 +309,7 @@ def downloadReadingList(list, orig_config, callback, use_cache=True, re_read=Tru
 
 def http_cache_directory():
     if parser.has_option('Planet', 'http_cache_directory'):
-        os.path.join(cache_directory(), 
+        return os.path.join(cache_directory(), 
             parser.get('Planet', 'http_cache_directory'))
     else:
         return os.path.join(cache_directory(), "cache")
@@ -315,9 +321,16 @@ def cache_sources_directory():
     else:
         return os.path.join(cache_directory(), 'sources')
 
+def cache_blacklist_directory():
+    if parser.has_option('Planet', 'cache_blacklist_directory'):
+        return os.path.join(cache_directory(),
+            parser.get('Planet', 'cache_blacklist_directory'))
+    else:
+        return os.path.join(cache_directory(), 'blacklist')
+
 def cache_lists_directory():
     if parser.has_option('Planet', 'cache_lists_directory'):
-        parser.get('Planet', 'cache_lists_directory')
+        return parser.get('Planet', 'cache_lists_directory')
     else:
         return os.path.join(cache_directory(), 'lists')
 
@@ -332,7 +345,7 @@ def feed():
 
 def feedtype():
     if parser.has_option('Planet', 'feedtype'):
-        parser.get('Planet', 'feedtype')
+        return parser.get('Planet', 'feedtype')
     elif feed() and feed().find('atom')>=0:
         return 'atom'
     elif feed() and feed().find('rss')>=0:
