@@ -1,10 +1,10 @@
---- 
-countries: 
+---
+countries:
   - mx
-email: ~
+email: fcestrada@fcestrada.com
 enabled: 'on'
 filename: fernando_c_estrada
 message: ~
 name: Fernando C. Estrada
 twitter: ~
-url: http://www.fcestrada.com/index.php/category/planets/planetalinuxmexico/feed/atom/
+url: http://blog.fcestrada.com/category/spanish/planetalinux/feed/
