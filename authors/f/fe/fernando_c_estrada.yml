@@ -3,6 +3,7 @@ countries:
   - mx
 email: fcestrada@fcestrada.com
 enabled: 'on'
+face: mx/fcestrada.png
 filename: fernando_c_estrada
 message: ~
 name: Fernando C. Estrada
