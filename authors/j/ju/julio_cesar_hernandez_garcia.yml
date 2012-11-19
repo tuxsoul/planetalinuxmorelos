@@ -1,6 +1,18 @@
 --- 
 countries: 
   - ve
+  - ar   
+  - cl
+  - co
+  - cr
+  - ec
+  - es
+  - gt
+  - mx
+  - ni
+  - pa
+  - pe
+  - sv
 email: ~
 enabled: 'on'
 face: ve/julioch.png
