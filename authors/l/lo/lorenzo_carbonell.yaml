@@ -2,7 +2,7 @@
 countries: 
   - es
 email: atareao@atareao.es
-enabled: 'on'
+enabled: 'off'
 filename: lorenzo_carbonell.yml
 message: ~
 name: Lorenzo Carbonell
