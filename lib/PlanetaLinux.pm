@@ -59,8 +59,7 @@ sub analytics_id {
 
 sub country_name {
 	my($self) = shift;
-		
-	find_name_by_cctld( $self->country );
+	find_name_by_cctld( $self->country ) || $self->country;
 }
 
 sub run {
@@ -114,7 +113,7 @@ sub template {
 	for my $c ( $self->countries ) {
 		push @$countries, {
 			tld => $c,
-			name => find_name_by_cctld($c) || die "No country for `$c'",
+			name => find_name_by_cctld($c) || $c,
 		};
 	}
 		

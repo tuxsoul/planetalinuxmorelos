@@ -25,8 +25,7 @@ while(<$fh>) {
 	chomp;
 	my $c_id = $_;
 	
-	my $c_name = find_name_by_cctld( $c_id )
-		or die "Couldn't find the name in Spanish for the ccTLD: `$c_id'. I better die.\n";
+	my $c_name = find_name_by_cctld( $c_id ) || $c_id;
 		
 	task $c_id,
 		"Builds the Planeta Linux instance for: `$c_name'",
