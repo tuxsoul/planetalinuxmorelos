@@ -1,10 +1,10 @@
 --- 
 countries: 
-  - android
+  - ve
 email: migueluseche@skatox.com
 enabled: 'on'
-filename: miguel_useche.yml
+filename: miguel_useche
 message: ~
 name: Miguel Useche
-twitter: ~
-url: http://skatox.com/blog/category/android/feed/
+twitter: skatox
+url: http://skatox.com/blog/category/planetas-linux/feed/
