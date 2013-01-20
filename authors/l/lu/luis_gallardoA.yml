@@ -1,11 +1,11 @@
 --- 
 countries: 
-  - ve
+  - android
 email: lgallard@gmail.com
 enabled: 'on'
 face: ve/lgallardo.png
-filename: luis_gallardo_
+filename: luis_gallardoA
 message: ~
 name: "Luis Gallardo "
 twitter: lgallard
-url: http://lgallardo.com/category/linux/feed/atom/
+url: http://lgallardo.com/category/android/feed/
