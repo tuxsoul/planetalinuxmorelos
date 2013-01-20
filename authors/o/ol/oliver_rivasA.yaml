@@ -1,10 +1,10 @@
 --- 
 countries: 
-  - ve
+  - android
 email: orvtech@gmail.com
 enabled: 'on'
-filename: oliver_rivas
+filename: oliver_rivasA
 message: ~
 name: Oliver Rivas
 twitter: orvtech
-url: http://orvtech.com/category/general/feed/
+url: http://orvtech.com/category/android_os/feed
