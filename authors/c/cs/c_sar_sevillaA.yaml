@@ -1,11 +1,11 @@
 --- 
 countries: 
-  - ve
+  - android
 email: cwsevilla@gmail.com
 enabled: 'on'
 face: ve/cesar.png
-filename: c_sar_sevilla.yml
+filename: c_sar_sevillaA
 message: ~
 name: César Sevilla
 twitter: cwsevilla
-url: http://cesarsevilla.wordpress.com/category/linux/feed/atom/
+url: http://cesarsevilla.wordpress.com/category/android/feed/atom/

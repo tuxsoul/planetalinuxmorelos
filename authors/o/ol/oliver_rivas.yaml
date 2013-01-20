@@ -3,6 +3,7 @@ countries:
   - ve
 email: orvtech@gmail.com
 enabled: 'on'
+face: ve/orvtech.png
 filename: oliver_rivas
 message: ~
 name: Oliver Rivas
