@@ -28,6 +28,7 @@ sub new {
 		_feeds => \@feeds,
 		_t => Template->new(
 			INCLUDE_PATH => dirname(__FILE__).'/../../template',
+			ENCODING => 'utf8',
 		) || die Template->error,
 	}, $self;
 }
