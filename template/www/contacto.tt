@@ -6,7 +6,7 @@
 <fieldset id="recuadro2">
 <legend>Contacto</legend>
 
-	<p>Para entrar en contacto con los administradores de Planeta Linux, ya sea para agregar un feed, cambiar uno existente, reportar problemas o cualquier situación que necesite nuestra intervención, por favor abra un requerimiento <a href="http://github.com/axiombox/planetalinux/issues">en nuestra página de requerimientos en Github</a>. <strong>Por favor, no contacte a los administradores en sus correos electrónicos personales</strong>.
+	<p>Para entrar en contacto con los administradores de Planeta Linux, ya sea para agregar un feed, cambiar uno existente, reportar problemas o cualquier situación que necesite nuestra intervención, por favor abra un requerimiento <a href="http://github.com/planetalinux/planetalinux/issues">en nuestra página de requerimientos en Github</a>. <strong>Por favor, no contacte a los administradores en sus correos electrónicos personales</strong>.
 		
 	<p>Si desea que un feed sea agregado a Planeta Linux <strong>por favor, escribe tu nombre completo, tu correo electrónico, URL del feed de tu blog e indica la instancia del país donde quieres aparecer (México, Venezuela, Chile, etc) por medio de las etiquetas del requerimiento</strong>.</p>
 
