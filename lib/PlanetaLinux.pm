@@ -119,10 +119,11 @@ sub template {
 	}
 		
 	$self->{_t}->process('index.html.tmpl', {
-		analytics_id => $self->analytics_id,
-		instance_name => $self->country_name,
-		instance_name_pure => _normalize_name($self->country_name),
-		instance_code => $self->country,
+		analytics_id 		=> $self->analytics_id,
+		instance_name 		=> $self->country_name,
+		instance_name_pure 	=> _normalize_name($self->country_name),
+		instance_code 		=> $self->country,
+		last_update			=> scalar localtime,
 		countries => $countries,
 	}, dirname(__FILE__).'/../tmp/'.$self->country.'/index.html.tmpl',
 	{binmode => ":utf8"})
