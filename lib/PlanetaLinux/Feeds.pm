@@ -91,7 +91,8 @@ sub ini {
 			}
 			$f;
 		} @{ $self->{_feeds} } ],
-	}, dirname(__FILE__).'/../../tmp/'.$country.'/config.ini');
+	}, dirname(__FILE__).'/../../tmp/'.$country.'/config.ini',
+	{binmode => ":utf8"});
 	
 	dirname(__FILE__).'/../../tmp/'.$country.'/config.ini';
 

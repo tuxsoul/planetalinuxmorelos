@@ -124,7 +124,8 @@ sub template {
 		instance_name_pure => _normalize_name($self->country_name),
 		instance_code => $self->country,
 		countries => $countries,
-	}, dirname(__FILE__).'/../tmp/'.$self->country.'/index.html.tmpl')
+	}, dirname(__FILE__).'/../tmp/'.$self->country.'/index.html.tmpl',
+	{binmode => ":utf8"})
 		or die "Couldn't process template!".$self->{_t}->error;
 	
 	return dirname(__FILE__).'/../tmp/'.$self->country.'/index.html.tmpl';
