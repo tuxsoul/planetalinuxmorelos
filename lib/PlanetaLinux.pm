@@ -16,6 +16,7 @@ sub new {
 
 	$ref->{_t} = Template->new(
 			INCLUDE_PATH => dirname(__FILE__).'/../template',
+			ENCODING => 'utf8',
 	);
 
 	return bless $ref, $self;
