@@ -102,7 +102,7 @@ blockquote{
 	font-size: 1.3em;
 }
 .author-info .weblog,
-.author-info .feed{
+.author-info .twitter{
 	font-size: 0.85em;
 }
 /** 
@@ -141,7 +141,7 @@ blockquote{
 	text-decoration: underline;
 }
 #entry-wrap .author-info cite a:link, #entry-wrap .author-info cite a:visited,
-#entry-wrap .author-info a.feed:link, #entry-wrap .author-info a.feed:visited,
+#entry-wrap .author-info a.twitter:link, #entry-wrap .author-info a.twitter:visited,
 #entry-wrap .post-footer a.permalink:link, #entry-wrap .post-footer a.permalink:visited
 {
 	color: #39f;
@@ -156,7 +156,7 @@ blockquote{
 	background: transparent url("../images/mar06/permalink.png") 100% 50% no-repeat;
 	padding: 3px 21px 4px 0;
 }
-#entry-wrap .author-info a.feed:link, #entry-wrap .author-info a.feed:visited{
+#entry-wrap .author-info a.twitter:link, #entry-wrap .author-info a.twitter:visited{
 	display: block;
 	float: left;
 	padding: 16px 0 0 0;
@@ -164,18 +164,18 @@ blockquote{
 	height: 0 !important;
 	height /**/: 16px;
 	width: 16px;
-	background: transparent url("../images/mar06/feed.png") top left no-repeat;
-	margin: 0 0 0 5px;
+	background: transparent url("../images/mar06/twitter.png") top left no-repeat;
+	margin: 0 0 0 0;
 }
 #entry-wrap .author-info cite a:hover,
-#entry-wrap .author-info a.feed:hover,
+#entry-wrap .author-info a.twitter:hover,
 #entry-wrap .post-footer a.permalink:hover
 {
 	color: #f60;
 	border-bottom: 0 none;
 }
 #entry-wrap .author-info cite a:active,
-#entry-wrap .author-info a.feed:active,
+#entry-wrap .author-info a.twitter:active,
 #entry-wrap .post-footer a.permalink:active
 {
 	color: #36c;
