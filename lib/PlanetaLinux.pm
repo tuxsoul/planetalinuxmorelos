@@ -97,9 +97,47 @@ sub run {
 			print STDERR Dumper ( "STDERR:\n", $stderr );
 			print STDERR Dumper ( "STDOUT:\n", $stdout );
 			exit 1;
+		} else {
+			# Let's do this because Venus is stoooooopid
+			my $index_output = dirname(__FILE__)."/../www/$c/index.html";
+			my $index_output_contents = read_file $index_output;
+			$index_output_contents = _unstupidize_the_fucking_dates( $index_output_contents );
+			write_file( $index_output, $index_output_contents );
 		}
 		
 	}
+}
+
+sub _unstupidize_the_fucking_dates {
+	my $text = shift;
+
+	my %date_trans = (qw(
+		Monday		Lunes
+		Tuesday		Martes
+		Wednesday	Miércoles
+		Thursday	Jueves
+		Friday		Viernes
+		Saturday	Sábado
+		Sunday		Domingo
+		January		enero
+		February	febrero
+		March		marzo
+		April		abril
+		May		mayo
+		June		junio
+		July		julio
+		August		agosto
+		September	septiembre
+		October		octubre
+		November	noviembre
+		December	diciembre
+	));
+
+	while( my( $eng, $spa ) = each %date_trans ) {
+		$text =~ s#<pl>$eng</pl>#$spa#ig;
+	}
+	print STDERR $text;
+	return $text;
 }
 
 sub countries {
