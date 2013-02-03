@@ -9,11 +9,14 @@ die "You better run this as root.\n"
 my $modules = [qw!
 	App::Cmd
 	App::Build
+	Capture::Tiny
 	Config::IniFiles
 	Data::Validate::Email
 	DateTime
 	File::MimeInfo::Simple
 	File::Path
+	File::Remove
+	File::Slurp
 	Modern::Perl
 	Module::Build
 	Net::Domain::ES::ccTLD

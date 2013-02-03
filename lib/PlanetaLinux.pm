@@ -9,6 +9,9 @@ use Carp;
 use File::Basename;
 use File::Temp;
 use Net::Domain::ES::ccTLD '0.03';
+use Capture::Tiny ':all';
+use File::Slurp;
+use File::Remove 'remove';
 
 sub new {
 	my $self = shift;
@@ -77,17 +80,24 @@ sub run {
 		
 		my $template = $self->template;
 		my $ini = $self->feeds({country => $self->country})->by_country->ini({tmp_template => $template});
-				
 		my $dir = dirname(__FILE__).'/../';
 		
 		mkdir "$dir/cache/$c";
 
-		`find $dir -type f -name "*.tmplc" -exec rm -f '{}' \\;`;
+		remove( \1, "$dir/*.tmplc" );
 		
-		# hacerlo de una mejor forma?
 		my $venus = dirname(__FILE__).'/../venus/planet.py';
-		
-		`$venus $ini`;
+
+		my ($stdout, $stderr, $exit) = capture {
+			  system( $venus, $ini );
+		};
+
+		if ( $exit ) {
+			print STDERR "!!! Something obviously went wrong !!!\n";
+			print STDERR Dumper ( "STDERR:\n", $stderr );
+			print STDERR Dumper ( "STDOUT:\n", $stdout );
+			exit 1;
+		}
 		
 	}
 }
