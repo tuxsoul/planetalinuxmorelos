@@ -89,7 +89,7 @@ sub run {
 		my $venus = dirname(__FILE__).'/../venus/planet.py';
 
 		my ($stdout, $stderr, $exit) = capture {
-			  system( $venus, $ini );
+			system( $venus, $ini );
 		};
 
 		if ( $exit ) {
@@ -136,7 +136,6 @@ sub _unstupidize_the_fucking_dates {
 	while( my( $eng, $spa ) = each %date_trans ) {
 		$text =~ s#<pl>$eng</pl>#$spa#ig;
 	}
-	print STDERR $text;
 	return $text;
 }
 
