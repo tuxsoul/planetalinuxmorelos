@@ -1,10 +1,8 @@
-New Planeta Linux build system
-==============================
+Planeta Linxu is Latin America's largest community for users, developers
+and enthusiasts of Linux and FLOSS. It has been operating and growing
+since 2004.
 
-El nuevo sistema de build de Planeta Linux ha sido mejorado.
+This git repository contains everything that powers the website.
+Technical details can be found here:
+http://damog.nl/blog/the-new-planeta-linux-engine.html
 
-Sin embargo, aún no es completamente usable. Acude a <damog> para
-mayores referencias.
-
-- - -
-David Moreno <david@axiombox.com> <http://damog.net/>
