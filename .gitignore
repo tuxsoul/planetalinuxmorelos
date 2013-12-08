@@ -13,3 +13,4 @@ cache/*
 proc/universo/config.ini
 *.tmplc
 *.DS_Store
+local/
