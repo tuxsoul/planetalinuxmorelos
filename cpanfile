@@ -12,4 +12,5 @@ requires 'Net::Domain::ES::ccTLD';
 requires 'Template';
 requires 'WebService::Validator::Feed::W3C';
 requires 'YAML::Syck';
+requires 'Modern::Perl';
 
