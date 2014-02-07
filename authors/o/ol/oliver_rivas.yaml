@@ -4,8 +4,8 @@ countries:
 email: orvtech@gmail.com
 enabled: 'on'
 face: ve/orvtech.png
-filename: oliver_rivas.yml
+filename: oliver_rivas
 message: ~
 name: Oliver Rivas
 twitter: orvtech
-url: http://feeds.feedburner.com/orvtech-linux/
+url: http://orvtech.com/tag/linux/feed/

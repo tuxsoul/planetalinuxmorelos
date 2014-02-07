@@ -6,5 +6,5 @@ enabled: 'on'
 filename: flavio_percoco_premoli
 message: ~
 name: Flavio Percoco Premoli
-twitter: ~
-url: http://www.flaper87.org/category/gnulinux/feed
+twitter: flaper87
+url: http://blog.flaper87.com/feeds/latest/tag/linux-es/

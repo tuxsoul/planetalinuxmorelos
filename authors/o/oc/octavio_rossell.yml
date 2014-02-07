@@ -2,7 +2,7 @@
 countries: 
   - ve
 email: ~
-enabled: 'on'
+enabled: 'off'
 face: ve/octavio.png
 filename: octavio_rossell
 message: ~

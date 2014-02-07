@@ -1,7 +1,19 @@
 --- 
 countries: 
   - ve
-email: ~
+  - ar   
+  - cl
+  - co
+  - cr
+  - ec
+  - es
+  - gt
+  - mx
+  - ni
+  - pa
+  - pe
+  - sv
+email: julioh@bisontech.com.ve
 enabled: 'on'
 face: ve/julioch.png
 filename: julio_cesar_hernandez_garcia

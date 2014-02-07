@@ -28,6 +28,7 @@ sub new {
 		_feeds => \@feeds,
 		_t => Template->new(
 			INCLUDE_PATH => dirname(__FILE__).'/../../template',
+			ENCODING => 'utf8',
 		) || die Template->error,
 	}, $self;
 }
@@ -90,7 +91,8 @@ sub ini {
 			}
 			$f;
 		} @{ $self->{_feeds} } ],
-	}, dirname(__FILE__).'/../../tmp/'.$country.'/config.ini');
+	}, dirname(__FILE__).'/../../tmp/'.$country.'/config.ini',
+	{binmode => ":utf8"});
 	
 	dirname(__FILE__).'/../../tmp/'.$country.'/config.ini';
 

@@ -86,7 +86,7 @@ sub validate_args {
 	}
 	
 	$self->usage_error("Wrong countries format: $opt->{countries}.")
-		unless lc $opt->{countries} =~ /^[a-z]{2}(?:,[a-z]{2})*$/;
+		unless lc $opt->{countries} =~ /^[a-z]+(?:,[a-z]+)*$/;
 	
 	$self->usage_error("Invalid extra arguments! ".join(' ', @$args))
 		if @$args % 2;
@@ -105,15 +105,14 @@ sub execute {
 		if $pl->does_feed_exist($feed);
 
 	my $val = WebService::Validator::Feed::W3C->new;
+
 	my $ok = $val->validate(uri => $feed);	
 	
-	if($ok){
-    if($val->errorcount == 0) {
-      say "Valid feed."
-    }
-  } else {
-    die "Invalid feed. Aborting.\n";
-  }
+	if ( $ok and $val->is_valid ) {
+		say "Valid feed."
+	} else {
+		die "Invalid feed. Aborting.\n";
+	}
 	
 	$self->_add_feed($opt, $args);
 }

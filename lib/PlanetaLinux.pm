@@ -9,6 +9,9 @@ use Carp;
 use File::Basename;
 use File::Temp;
 use Net::Domain::ES::ccTLD '0.03';
+use Capture::Tiny ':all';
+use File::Slurp;
+use File::Remove 'remove';
 
 sub new {
 	my $self = shift;
@@ -16,6 +19,7 @@ sub new {
 
 	$ref->{_t} = Template->new(
 			INCLUDE_PATH => dirname(__FILE__).'/../template',
+			ENCODING => 'utf8',
 	);
 
 	return bless $ref, $self;
@@ -59,8 +63,7 @@ sub analytics_id {
 
 sub country_name {
 	my($self) = shift;
-		
-	find_name_by_cctld( $self->country );
+	find_name_by_cctld( $self->country ) || $self->country;
 }
 
 sub run {
@@ -77,19 +80,63 @@ sub run {
 		
 		my $template = $self->template;
 		my $ini = $self->feeds({country => $self->country})->by_country->ini({tmp_template => $template});
-				
 		my $dir = dirname(__FILE__).'/../';
 		
 		mkdir "$dir/cache/$c";
 
-		`find $dir -type f -name "*.tmplc" -exec rm -f '{}' \\;`;
+		remove( \1, "$dir/*.tmplc" );
 		
-		# hacerlo de una mejor forma?
 		my $venus = dirname(__FILE__).'/../venus/planet.py';
-		
-		`$venus $ini`;
+
+		my ($stdout, $stderr, $exit) = capture {
+			system( $venus, $ini );
+		};
+
+		if ( $exit ) {
+			print STDERR "!!! Something obviously went wrong !!!\n";
+			print STDERR Dumper ( "STDERR:\n", $stderr );
+			print STDERR Dumper ( "STDOUT:\n", $stdout );
+			exit 1;
+		} else {
+			# Let's do this because Venus is stoooooopid
+			my $index_output = dirname(__FILE__)."/../www/$c/index.html";
+			my $index_output_contents = read_file $index_output;
+			$index_output_contents = _unstupidize_the_fucking_dates( $index_output_contents );
+			write_file( $index_output, $index_output_contents );
+		}
 		
 	}
+}
+
+sub _unstupidize_the_fucking_dates {
+	my $text = shift;
+
+	my %date_trans = (qw(
+		Monday		Lunes
+		Tuesday		Martes
+		Wednesday	Miércoles
+		Thursday	Jueves
+		Friday		Viernes
+		Saturday	Sábado
+		Sunday		Domingo
+		January		enero
+		February	febrero
+		March		marzo
+		April		abril
+		May		mayo
+		June		junio
+		July		julio
+		August		agosto
+		September	septiembre
+		October		octubre
+		November	noviembre
+		December	diciembre
+	));
+
+	while( my( $eng, $spa ) = each %date_trans ) {
+		$text =~ s#<pl>$eng</pl>#$spa#ig;
+	}
+	return $text;
 }
 
 sub countries {
@@ -114,17 +161,19 @@ sub template {
 	for my $c ( $self->countries ) {
 		push @$countries, {
 			tld => $c,
-			name => find_name_by_cctld($c) || die "No country for `$c'",
+			name => find_name_by_cctld($c) || $c,
 		};
 	}
 		
 	$self->{_t}->process('index.html.tmpl', {
-		analytics_id => $self->analytics_id,
-		instance_name => $self->country_name,
-		instance_name_pure => _normalize_name($self->country_name),
-		instance_code => $self->country,
+		analytics_id 		=> $self->analytics_id,
+		instance_name 		=> $self->country_name,
+		instance_name_pure 	=> _normalize_name($self->country_name),
+		instance_code 		=> $self->country,
+		last_update			=> scalar localtime,
 		countries => $countries,
-	}, dirname(__FILE__).'/../tmp/'.$self->country.'/index.html.tmpl')
+	}, dirname(__FILE__).'/../tmp/'.$self->country.'/index.html.tmpl',
+	{binmode => ":utf8"})
 		or die "Couldn't process template!".$self->{_t}->error;
 	
 	return dirname(__FILE__).'/../tmp/'.$self->country.'/index.html.tmpl';
