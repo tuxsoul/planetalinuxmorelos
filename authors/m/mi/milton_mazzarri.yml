@@ -1,12 +1,12 @@
---- 
-countries: 
+---
+countries:
   - ve
   - mx
 email: milmazz@gmail.com
 enabled: 'on'
 face: ve/milton.png
 filename: milton_mazzarri
-message: ~
+message: "Tecnología, Internet, Software Libre y GNU/Linux."
 name: Milton Mazzarri
 twitter: milmazz
-url: http://blog.milmazz.com.ve/feed
+url: http://milmazz.com.ve/atom.xml
