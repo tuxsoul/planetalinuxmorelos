@@ -12,6 +12,7 @@ use Net::Domain::ES::ccTLD '0.03';
 use Capture::Tiny ':all';
 use File::Slurp;
 use File::Remove 'remove';
+use Text::Unaccent::PurePerl qw(unac_string);
 
 sub new {
 	my $self = shift;
@@ -168,7 +169,7 @@ sub template {
 	$self->{_t}->process('index.html.tmpl', {
 		analytics_id 		=> $self->analytics_id,
 		instance_name 		=> $self->country_name,
-		instance_name_pure 	=> _normalize_name($self->country_name),
+		instance_name_pure 	=> unac_string($self->country_name),
 		instance_code 		=> $self->country,
 		last_update			=> scalar localtime,
 		countries => $countries,
@@ -191,18 +192,6 @@ sub feeds {
 	my($self) = shift;	
 	return PlanetaLinux::Feeds->new(shift);
 	
-}
-
-# somebody shoot me please
-sub _normalize_name {
-	my $x = $_[0];
-	$x =~ s/á/a/;
-	$x =~ s/é/e/;
-	$x =~ s/í/i/;
-	$x =~ s/ó/o/;
-	$x =~ s/ú/u/;
-	$x =~ s/ñ/n/;
-	$x;
 }
 
 1;

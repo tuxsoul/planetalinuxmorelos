@@ -17,6 +17,7 @@ my $modules = [qw!
 	File::Path
 	File::Remove
 	File::Slurp
+	Text::Unaccent::PurePerl
 	Modern::Perl
 	Module::Build
 	Net::Domain::ES::ccTLD
