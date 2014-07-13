@@ -64,7 +64,7 @@ sub analytics_id {
 
 sub country_name {
 	my($self) = shift;
-	find_name_by_cctld( $self->country ) || $self->country;
+	find_name_by_cctld( $self->country ) || ucfirst( $self->country );
 }
 
 sub run {
