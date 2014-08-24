@@ -16,7 +16,6 @@ my $modules = [qw!
 	File::MimeInfo::Simple
 	File::Path
 	File::Remove
-	File::Slurp
 	Text::Unaccent::PurePerl
 	Modern::Perl
 	Module::Build

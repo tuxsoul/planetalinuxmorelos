@@ -10,7 +10,6 @@ use File::Basename;
 use File::Temp;
 use Net::Domain::ES::ccTLD '0.03';
 use Capture::Tiny ':all';
-use File::Slurp;
 use File::Remove 'remove';
 use Text::Unaccent::PurePerl qw(unac_string);
 
@@ -101,7 +100,13 @@ sub run {
         } else {
             # Let's do this because Venus is stoooooopid
             my $index_output = dirname(__FILE__)."/../www/$c/index.html";
-            my $index_output_contents = read_file $index_output;
+            my $index_output_contents;
+            {
+                open my $fh, "<", $index_output or die "Couldn't read $index_output: $!";
+                undef $/;
+                $index_output_contents = <$fh>;
+                close $fh;
+            }
             $index_output_contents = _unstupidize_the_fucking_dates( $index_output_contents );
             write_file( $index_output, $index_output_contents );
         }

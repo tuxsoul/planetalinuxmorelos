@@ -6,7 +6,6 @@ requires 'Data::Validate::Email';
 requires 'DateTime';
 requires 'File::MimeInfo::Simple';
 requires 'File::Remove';
-requires 'File::Slurp';
 requires 'Module::Build';
 requires 'Net::Domain::ES::ccTLD';
 requires 'Template';
