@@ -209,13 +209,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 	<h3 class="sidebartitle">Twitter</h3>
 	<p><a href="http://twitter.com/planetalinux">Sigue el Twitter de Planeta Linux.</a></p>
 
-	<h3 class="sidebartitle">identi.ca</h3>
-	<p>Actualizaciones de Planeta Linux también en <a href="http://identi.ca/planetalinux">identi.ca</a>.</p>
-
-
-	<h3 class="sidebartitle">Last.FM</h3>
-	<p>¿Qué música escuchamos en Planeta Linux? Únete al <a href="http://www.last.fm/group/Planeta_Linux">grupo de Planeta Linux</a> en <a href="http://last.fm/">Last.FM</a>.</p>
-
 	<h3 class="sidebartitle">Facebook</h3>
 	<p>También visita <a href="http://www.facebook.com/home.php#/pages/Planeta-Linux/10141091043">la página de Planeta Linux</a> en <a href="http://facebook.com">Facebook</a>.</p>
 
