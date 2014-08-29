@@ -108,7 +108,11 @@ sub run {
                 close $fh;
             }
             $index_output_contents = _unstupidize_the_fucking_dates( $index_output_contents );
-            write_file( $index_output, $index_output_contents );
+            {
+                open my $fh, ">", $index_output or die "Couldn't do shit on $index_output: $!";
+                print $fh $index_output_contents;
+                close $fh;
+            }
         }
         
     }
