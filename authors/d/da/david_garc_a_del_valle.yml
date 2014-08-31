@@ -2,7 +2,7 @@
 countries: 
   - mx
 email: ~
-enabled: 'on'
+enabled: 'off'
 #face: mx/davidgdelvalle.png
 filename: david_garc_a_del_valle
 message: ~
