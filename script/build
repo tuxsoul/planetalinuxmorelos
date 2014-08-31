@@ -18,7 +18,6 @@ open my $fh, "<", $dir."/../config/countries.list"
 	or die "Couldn't read the countries list.";
 
 my $r = {};
-
 my $all = [];
 
 while(<$fh>) {
@@ -44,6 +43,7 @@ while(<$fh>) {
 	push @$all, $c_id;
 		
 }
+close $fh;
 
 task 'all',
 	"Builds all Planeta Linux instances.",

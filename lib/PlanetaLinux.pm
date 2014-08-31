@@ -27,17 +27,15 @@ sub new {
 
 sub is_country_supported {
     my($self) = shift;
-    my $c = shift;
     
-    open my $fh, "<", dirname(__FILE__).'/../config/countries.list'
-        or die "Couldn't read countries list: $!";
-    
-    while(<$fh>) {
-        chomp;
-        return 1 if $self->country eq $_; 
+    unless ( $self->{_supported_countries} ) {
+        open my $fh, "<", dirname(__FILE__).'/../config/countries.list' or die "Couldn't read countries list: $!";
+        local $/ = undef;
+        $self->{_supported_countries} = { map { $_ => 1 } split /\n/, <$fh> };
+        close $fh;
     }
     
-    0;
+    return $self->{_supported_countries}->{$self->country} ? 1 : 0;
 }
 
 sub country {
@@ -74,7 +72,6 @@ sub run {
         # generate template
         $self->country($c);
         
-        $self->country_name;
         croak "No instance found for $c"
             unless $self->is_country_supported;
         
@@ -149,6 +146,7 @@ sub _unstupidize_the_fucking_dates {
     return $text;
 }
 
+# TODO: this should be cached not to read the file every time
 sub countries {
     my($self) = shift;
     open my $fh, "<", dirname(__FILE__).'/../config/countries.list'
