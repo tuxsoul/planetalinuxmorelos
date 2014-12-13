@@ -13,7 +13,7 @@ use Capture::Tiny ':all';
 use File::Remove 'remove';
 use Text::Unaccent::PurePerl qw(unac_string);
 
-my @countries = qw(
+our @countries = qw(
     android
     ar
     cl

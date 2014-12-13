@@ -12,18 +12,10 @@ use PlanetaLinux;
 use Data::Dumper;
 use File::Path qw/remove_tree/;
 
-my $dir = dirname(__FILE__);
-
-open my $fh, "<", $dir."/../config/countries.list"
-	or die "Couldn't read the countries list.";
-
 my $r = {};
 my $all = [];
 
-while(<$fh>) {
-	chomp;
-	my $c_id = $_;
-	
+for my $c_id ( @PlanetaLinux::countries ) {
 	my $c_name = find_name_by_cctld( $c_id ) || $c_id;
 		
 	task $c_id,
@@ -43,7 +35,6 @@ while(<$fh>) {
 	push @$all, $c_id;
 		
 }
-close $fh;
 
 task 'all',
 	"Builds all Planeta Linux instances.",
