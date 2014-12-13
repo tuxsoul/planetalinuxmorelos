@@ -13,6 +13,23 @@ use Capture::Tiny ':all';
 use File::Remove 'remove';
 use Text::Unaccent::PurePerl qw(unac_string);
 
+my @countries = qw(
+    android
+    ar
+    cl
+    co
+    cr
+    ec
+    es
+    gt
+    mx
+    ni
+    pa
+    pe
+    sv
+    ve
+);
+
 sub new {
     my $self = shift;
     my $ref = shift || {};
@@ -29,10 +46,7 @@ sub is_country_supported {
     my($self) = shift;
     
     unless ( $self->{_supported_countries} ) {
-        open my $fh, "<", dirname(__FILE__).'/../config/countries.list' or die "Couldn't read countries list: $!";
-        local $/ = undef;
-        $self->{_supported_countries} = { map { $_ => 1 } split /\n/, <$fh> };
-        close $fh;
+        $self->{_supported_countries} = { map { $_ => 1 } @countries };
     }
     
     return $self->{_supported_countries}->{$self->country} ? 1 : 0;
@@ -146,20 +160,7 @@ sub _unstupidize_the_fucking_dates {
     return $text;
 }
 
-# TODO: this should be cached not to read the file every time
-sub countries {
-    my($self) = shift;
-    open my $fh, "<", dirname(__FILE__).'/../config/countries.list'
-        or die "Couldn't read countries list: $!";
-    my @ret;
-    while(<$fh>) {
-        chomp;
-        push @ret, $_;
-    }
-    close $fh;
-    return @ret;
-    
-}
+sub countries { @countries }
 
 sub template {
     my $self = shift;
