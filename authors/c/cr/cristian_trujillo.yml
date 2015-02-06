@@ -1,10 +1,10 @@
 --- 
 countries: 
   - mx
-email: ~
+email: cristian@xic.mx
 enabled: 'on'
 filename: cristian_trujillo
 message: ~
 name: Cristian Trujillo
 twitter: ~
-url: http://www.redux.com.mx/wordpress/wp-rss2.php
+url: http://xic.mx/?feed=rss2
