@@ -6,5 +6,5 @@ enabled: 'on'
 filename: muammar_el_khatib
 message: ~
 name: Muammar El Khatib
-twitter: ~
-url: http://muammar.me/blog/category/linux/feed/
+twitter: muammar
+url: http://muammar.me/blog/category/linux/feed.xml
