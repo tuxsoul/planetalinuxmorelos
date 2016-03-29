@@ -4,5 +4,5 @@ since 2004.
 
 This git repository contains everything that powers the website.
 Technical details can be found here:
-http://damog.nl/blog/the-new-planeta-linux-engine.html
+http://damog.net/blog/2009/11/11/the-new-planeta-linux-engine/
 
