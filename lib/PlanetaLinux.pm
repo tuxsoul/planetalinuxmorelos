@@ -14,20 +14,7 @@ use File::Remove 'remove';
 use Text::Unaccent::PurePerl qw(unac_string);
 
 our @countries = qw(
-    android
-    ar
-    cl
-    co
-    cr
-    ec
-    es
-    gt
     mx
-    ni
-    pa
-    pe
-    sv
-    ve
 );
 
 sub new {
