@@ -2,7 +2,7 @@
 countries: 
   - mx
 email: ~
-enabled: 'on'
+enabled: 'off'
 face: mx/kwame.png
 filename: daniel_bahena
 message: ~
