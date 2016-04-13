@@ -24,6 +24,7 @@ my $modules = [qw!
 	# Se anexa paquete en tools/cpan dado que la version online tiene error para compilar
 	# WebService::Validator::Feed::W3C
 	YAML::Syck
+	Test::Exception   # required by App::PPBuild
 !];
 
 for my $m (@$modules) {
