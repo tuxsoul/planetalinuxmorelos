@@ -23,6 +23,7 @@ my $modules = [qw!
 	Template
 	WebService::Validator::Feed::W3C
 	YAML::Syck
+	Test::Exception   # required by App::PPBuild
 !];
 
 for my $m (@$modules) {
