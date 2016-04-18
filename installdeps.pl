@@ -21,7 +21,8 @@ my $modules = [qw!
 	Module::Build
 	Net::Domain::ES::ccTLD
 	Template
-	WebService::Validator::Feed::W3C
+	# Se anexa paquete en tools/cpan dado que la version online tiene error para compilar
+	# WebService::Validator::Feed::W3C
 	YAML::Syck
 	Test::Exception   # required by App::PPBuild
 !];
