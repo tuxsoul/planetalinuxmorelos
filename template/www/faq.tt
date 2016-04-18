@@ -1,0 +1,76 @@
+<?php require("header.php"); ?>
+<div id="banderas">
+	<p><img src="images/planetalinux.png" align="right"></p>
+</div>
+<div id="contenido">
+<titulo>FAQ de Planeta Linux</titulo>
+
+<div id="FAQ" align="left">
+<h3>También conocida como Preguntas de Uso Frecuente</h3>
+<p>Escrita inicialmente por Héctor Colina <hector_colina@yahoo.com> y con colaboraciones de Milton Mazzarri <milmazz@gmail.com> y David Moreno <damog@damog.net>.</p>
+
+ <fieldset id="recuadro2">
+    <legend><a href="#PlanetaLinux" name="PlanetaLinux">¿Qué es Planeta Linux?</a></legend>
+    <p> Planeta Linux es una comunidad de usuarios, desarrolladores y activistas iberoamericanos de software libre, GNU/Linux y similares. A través de los <a href="http://es.wikipedia.org/wiki/Blog">blogs</a>, de cada uno de los miembros de esta comunidad, nos enteramos de lo que pasa, de primera mano, a nuestro alrededor de una forma divertida y actualizada al día por día.</p>
+</fieldset>
+
+<fieldset id="recuadro2">
+   <legend><a href="#PLInicio" name="PLInicio">¿Desde cuándo funciona Planeta Linux?</a></legend>
+     <p>Desde octubre de 2004.</p>
+</fieldset>	
+    
+<fieldset id="recuadro2">
+	<legend><a href="#Unirse" name="Unirse">¿Cómo me uno?</a></legend>
+      <p>Antes de cualquier cosa, asegúrate de leer nuestros <a href="lineamientos.php">lineamientos</a>. Para hacer cualquier petición, ya sea para agregarse, modificar algún feed existente o reportar problemas con el sitio, por favor visita nuestra página de <a href="contacto.html">Contacto</a>.</p>
+</fieldset>
+
+<fieldset id="recuadro2">
+	<legend><a href="#SonModerados" name="SonModerados">¿Son moderados los envíos?</a></legend>
+		<p>No. Sin embargo, cualquier blog que tenga contenido que el colectivo considere como fuera de lugar, será borrado. Hay que aplicar aquí, como en todas las situaciones de la vida, el sentido común.</p>
+</fieldset>
+
+<fieldset id="recuadro2">
+	<legend><a href="#Hackergotchi" name="Hackergotchi">¿Qué es un hackergotchi?</a></legend>
+	<p>Se denomina así a la imagen en la cual se muestra la cabeza del «hacker», «aspirante a hacker», o escritor del blog que se sindicaliza. Puedes encontrar más información <a href="http://en.wikipedia.org/wiki/Hackergotchi">aquí</a>.</p>
+</fieldset>
+
+<fieldset id="recuadro2">
+	<legend><a href="#ComoHacerHackergotchi" name="ComoHacerHackergotchi">¿Cómo hago mi hackergotchi?</a></legend>
+	<p>Echa un ojo a <a href="http://wouterverhelst.livejournal.com/21322.html">esta explicación</a>.
+O puedes ver un video explicativo utilizando GIMP, 
+<a href="http://www.dewback.cl/files/public/gimp/hackergotchi.avi">aquí</a>.</p>
+
+</fieldset>
+<fieldset id="recuadro2">
+	<legend><a href="#ComoDebeSerElHackergotchi" name="ComoDebeSerElHackergotchi">¿Cómo debe ser el hackergotchi a enviar?</a></legend>
+	<p>No debe exceder 95 pixeles (ni de ancho ni de alto) y en formato PNG.</p>
+</fieldset>
+
+<fieldset id="recuadro2">
+	<legend><a href="#CualDebeSerElContenido" name="CualDebeSerElContenido">¿Cuál debe ser el contenido de los RSS agregados en Planeta Linux?</a></legend>
+	<p>Se deben tocar temas de GNU/Linux y/o software libre en el blog, al menos, en su mayoría. Temáticas sobre tecnología en general, también son bien recibidos. Todo lo demás, está fuera de lugar.</p>
+</fieldset>
+
+<fieldset id="recuadro2">
+	<legend><a href="#ValidarFeed" name="ValidarFeed">¿Cómo sé que mi feed está técnicamente sin errores y ustedes pueden leerlo correctamente?</a></legend>
+	<p>Puedes validar feeds RSS/Atom en <a href="http://validator.w3.org/feed/">http://validator.w3.org/feed/</a> o
+<a href="http://www.feedvalidator.org/">http://www.feedvalidator.org/</a>.</p>
+</fieldset>
+
+<fieldset id="recuadro2">
+	<legend><a href="#errores" name="errores">Tengo problemas con mi feed o tengo algún problema. ¿Qué hago?</a></legend>
+	<p>Visita nuestra página de <a href="contacto.html">Contacto</a>.</p>
+</fieldset>
+
+<fieldset id="recuadro2">
+	<legend><a href="#portales" name="portales">¿Por qué solo aparecen los posts de mi feed con un título pequeño y no aparece sindicado todo el contenido?</a></legend>
+	<p>Los administradores han decidido que tu blog es un portal comunitario y no precisamente un blog personal. En Planeta Linux hacemos dicha distinción porque queremos mantener el sitio enfocado a personas, no a sitios, sin embargo reconocemos el papel fundamental que también algunos portales comunitarios tienen en el movimiento de software libre por eso quisimos adaptarlos a Planeta Linux de tal forma.</p>
+	<p>Las razones principales por las cuales un blog puede ser catalogado como portal pueden ser que el blog se publique principalmente bajo un nombre que no sea el de una persona; que varios autores participen enviando el contenido; que no se pueda identificar fácilmente quién es el autor de un blog; etc.</p>
+	<p>Hay que tenerse en cuenta que Planeta Linux es principalmente orientado por y para personas, no para grupos o portales de noticias, por ese motivo es que nos enfocamos a darle una cara y nombre a los blogs. Si crees que tu blog no debería ser tratado como portal, ponte en <a href="contacto.html">Contacto</a> con nosotros.</p>
+</fieldset>
+
+</div>
+</div>
+<?php require("footer.php"); ?>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?php require("header.php"); ?>
+<div id="banderas">
+	<p><img src="images/planetalinux.png" align="right"></p>
+</div>
+<div id="contenido">
+<fieldset id="recuadro2">
+<legend>Créditos</legend>
+	<p><b>Creador y administrador principal:</b> <br><a href="http://damog.net/">David Moreno</a>.</p>
+
+	<p><b>Administrador:</b><br><a href="http://julioh.com.ve">Julio Hernández</a>.
+	</p>
+
+	<p><b>Contribuidores en el pasado:</b>
+		<ul>
+		<li>&nbsp;<a href="http://www.gubatron.com">Ángel León</a>.<li>		
+		<li>&nbsp;<a href="http://neocalderon.org">Antonio Calderón</a>.</li>
+		<li>&nbsp;<a href="http://gnuget.org">David Valdez</a>.</li>
+		<li>&nbsp;<a href="https://wiki.ubuntu.com/eretamales">Eduardo Retamales</a>.</li>
+		<li>&nbsp;<a href="http://www.razametal.tk/">Guillermo Salas</a>.</li>
+		<li>&nbsp;<a href="http://e1th0r.gulmer.org.ve">Héctor Colina</a>.<li>
+		<li>&nbsp;<a href="http://xiam.menteslibres.org/">José Carlos Nieto</a>.</li>
+		<li>&nbsp;<a href="http://jordi.net">Jordi Adame</a>.</li>
+		<li>&nbsp;<a href="http://www.bureado.com">José Parrella</a>.</li>
+		<li>&nbsp;<a href="http://marcoalfonso.net">Marco Alfonso Ocampo</a>.</li>
+		<li>&nbsp;<a href="http://www.milmazz.com">Milton Mazzarri</a>.</li>
+		<li>&nbsp;<a href="http://www.maggit.com.mx">Raquel Hernández</a>.</li>
+		<li>&nbsp;<a href="http://www.kublun.com">Wieland Kublun</a>.</li>
+		</ul>
+	<p>
+</fieldset>
+</div>
+</div>
+<?php require("footer.php"); ?>
+</body>
+</html>
