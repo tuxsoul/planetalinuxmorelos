@@ -1,0 +1,20 @@
+User-agent: *
+
+Disallow: /.git/
+Disallow: /.openshift/
+Disallow: /authors/
+Disallow: /cache/
+Disallow: /config/
+Disallow: /lib/
+Disallow: /script/
+Disallow: /template/
+Disallow: /tmp/
+Disallow: /tools/
+Disallow: /venus/
+Disallow: /www/
+Disallow: /.gitignore
+Disallow: /.htaccess
+Disallow: /cpanfile
+Disallow: /cpanfile.snapshot
+Disallow: /installdeps.pl
+Disallow: /README.markdown
