@@ -5,10 +5,25 @@ RewriteEngine On
 Options -Indexes
 
 # Rewrite to internal files or folders
+
+# Rewrite empty /
+RewriteRule ^$ index.html [L]
+
+# Rewrite common files to correct folders
 RewriteRule ^images/(.*)$ /www/images/$1 [L,NC]
 RewriteRule ^css/(.*)$ /www/css/$1 [L,NC]
 
+# Redirect to real index.html
 RewriteRule ^index.html$ /www/mx/index.html [L,NC]
 
+# Redirect to real rss.xml
 RewriteRule ^rss.xml$ /www/mx/rss.xml [L,NC]
 RewriteRule ^mx/rss.xml$ /www/mx/rss.xml [L,NC]
+
+# Redirect from old files to new files
+Redirect 301 /rss10.xml /rss.xml
+Redirect 301 /rss20.xml /rss.xml
+Redirect 301 /atom.xml /rss.xml
+
+# ugly file
+Redirect 301 /mx/rss.xml /rss.xml
