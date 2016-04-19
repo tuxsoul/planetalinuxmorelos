@@ -19,28 +19,28 @@
  * 
  * - - - - - - - - - - - - - */
 #entry-wrap .post{
-	background: #f7f7f7 url("../images/mar06/corners/line-left.png") 0 0 repeat-y; 
+	background: #f7f7f7 url("../images/corners/line-left.png") 0 0 repeat-y; 
 	clear: both;
 }
 #entry-wrap .post-inner{
-	background: transparent url("../images/mar06/corners/line-right.png") 100% 0 repeat-y;
+	background: transparent url("../images/corners/line-right.png") 100% 0 repeat-y;
 }
 h3.entry-title{
-	background: transparent url("../images/mar06/corners/top-left.png") 0 0 no-repeat;
+	background: transparent url("../images/corners/top-left.png") 0 0 no-repeat;
 }
 h3.entry-title a{
 	display: block;
-	background: transparent url("../images/mar06/corners/top-right.png") top right no-repeat;
+	background: transparent url("../images/corners/top-right.png") top right no-repeat;
 	padding: 32px 20px 10px 20px;
 }
 .entry-content{
 	padding: 0 20px;
 }
 .post-footer{
-	background: transparent url("../images/mar06/corners/bottom-left.png") 0 100% no-repeat;
+	background: transparent url("../images/corners/bottom-left.png") 0 100% no-repeat;
 }
 .post-footer p{
-	background: transparent url("../images/mar06/corners/bottom-right.png") 100% 100% no-repeat;
+	background: transparent url("../images/corners/bottom-right.png") 100% 100% no-repeat;
 }
 .post-footer p a{
 	display: block;
@@ -65,12 +65,12 @@ h3.entry-title a{
 	font-size: 1px;
 }
 blockquote:before{
-	background: #fff url("../images/mar06/corners/blockquote-top-right.png") scroll top right no-repeat;
-	content: url("../images/mar06/corners/blockquote-top-left.png");
+	background: #fff url("../images/corners/blockquote-top-right.png") scroll top right no-repeat;
+	content: url("../images/corners/blockquote-top-left.png");
 }
 blockquote:after {
-  content:  url("../images/mar06/corners/blockquote-bottom-left.png");
-  background: #fff url("../images/mar06/corners/blockquote-bottom-right.png") scroll no-repeat bottom right;
+  content:  url("../images/corners/blockquote-bottom-left.png");
+  background: #fff url("../images/corners/blockquote-bottom-right.png") scroll no-repeat bottom right;
   margin-bottom: 1em;
 }
 blockquote{
