@@ -23,7 +23,7 @@
   overflow: hidden;
   height: 0 !important;
   height /**/: 100px;
-  background: transparent url("../images/mar06/planetalinux.png") 0 0 no-repeat;
+  background: transparent url("../images/planetalinux.png") 0 0 no-repeat;
 }
 #header-title a:hover,
 #header-title a:active{
@@ -50,106 +50,106 @@
 #navbar li a{ padding-left: 22px; }
 
 #navbar #android a:link, #navbar #android a:visited{
-    background: transparent url("../images/mar06/android.png") 0 3px no-repeat;
+    background: transparent url("../images/banderas/android-small.png") 0 3px no-repeat;
 } 
 
 #navbar #mx a:link, #navbar #mx a:visited{ 
-	background: transparent url("../images/mar06/mx.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/mx-small.png") 0 3px no-repeat;
 }  
 #navbar #mx a:hover, #navbar #mx a:focus, #navbar #mx a:active, #navbar #mx.current a{ 
-	background: transparent url("../images/mar06/mx.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/mx-small.png") 0 -26px no-repeat;
 }  
 #navbar #ve a:link, #navbar #ve a:visited{
-	background: transparent url("../images/mar06/ve.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/ve-small.png") 0 3px no-repeat;
 }
 #navbar #ve a:hover, #navbar #ve a:focus, #navbar #ve a:active, #navbar #ve.current a{ 
-	background: transparent url("../images/mar06/ve.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/ve-small.png") 0 -26px no-repeat;
 }  
 #navbar #pe a:link, #navbar #pe a:visited{
-	background: transparent url("../images/mar06/pe.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/pe-small.png") 0 3px no-repeat;
 }
 #navbar #pe a:hover, #navbar #pe a:focus, #navbar #pe a:active, #navbar #pe.current a{ 
-	background: transparent url("../images/mar06/pe.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/pe-small.png") 0 -26px no-repeat;
 }  
 #navbar #cl a:link, #navbar #cl a:visited{
-	background: transparent url("../images/mar06/cl.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/cl-small.png") 0 3px no-repeat;
 }
 #navbar #cl a:hover, #navbar #cl a:focus, #navbar #cl a:active, #navbar #cl.current a{ 
-	background: transparent url("../images/mar06/cl.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/cl-small.png") 0 -26px no-repeat;
 }  
 #navbar #co a:link, #navbar #co a:visited{
-	background: transparent url("../images/mar06/co.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/co-small.png") 0 3px no-repeat;
 }
 #navbar #co a:hover, #navbar #co a:focus, #navbar #co a:active, #navbar #co.current a{ 
-	background: transparent url("../images/mar06/co.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/co-small.png") 0 -26px no-repeat;
 }  
 
 #navbar #ec a:link, #navbar #ec a:visited{
-	background: transparent url("../images/mar06/ec.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/ec-small.png") 0 3px no-repeat;
 }
 #navbar #ec a:hover, #navbar #ec a:focus, #navbar #ec a:active, #navbar #ec.current a{ 
-	background: transparent url("../images/mar06/ec.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/ec-small.png") 0 -26px no-repeat;
 }  
 
 #navbar #es a:link, #navbar #es a:visited{
-	background: transparent url("../images/mar06/es.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/es-small.png") 0 3px no-repeat;
 }
 #navbar #es a:hover, #navbar #es a:focus, #navbar #es a:active, #navbar #es.current a{ 
-	background: transparent url("../images/mar06/es.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/es-small.png") 0 -26px no-repeat;
 }  
 
 #navbar #sv a:link, #navbar  #sv a:visited{
-	background: transparent url("../images/mar06/sv.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/sv-small.png") 0 3px no-repeat;
 }
 #navbar #sv a:hover, #navbar #sv a:focus, #navbar #sv a:active, #navbar #sv.current a{ 
-	background: transparent url("../images/mar06/sv.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/sv-small.png") 0 -26px no-repeat;
 }  
 
 #navbar #ni a:link, #navbar  #ni a:visited{
-	background: transparent url("../images/mar06/ni.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/ni-small.png") 0 3px no-repeat;
 }
 
 #navbar #ni a:hover, #navbar #ni a:focus, #navbar #ni a:active, #navbar #ni.current a{ 
-	background: transparent url("../images/mar06/ni.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/ni-small.png") 0 -26px no-repeat;
 }  
 
 #navbar #pa a:link, #navbar  #pa a:visited{
-	background: transparent url("../images/mar06/pa.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/pa-small.png") 0 3px no-repeat;
 }
 
 #navbar #pa a:hover, #navbar #pa a:focus, #navbar #pa a:active, #navbar #pa.current a{ 
-	background: transparent url("../images/mar06/pa.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/pa-small.png") 0 -26px no-repeat;
 }
 
 #navbar #cr a:link, #navbar  #cr a:visited{
-	background: transparent url("../images/mar06/cr.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/cr-small.png") 0 3px no-repeat;
 }
 
 #navbar #cr a:hover, #navbar #cr a:focus, #navbar #cr a:active, #navbar #cr.current a{ 
-	background: transparent url("../images/mar06/cr.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/cr-small.png") 0 -26px no-repeat;
 }
 
 #navbar #gt a:link, #navbar  #gt a:visited{
-	background: transparent url("../images/mar06/gt.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/gt-small.png") 0 3px no-repeat;
 }
 
 #navbar #gt a:hover, #navbar #gt a:focus, #navbar #gt a:active, #navbar #gt.current a{ 
-	background: transparent url("../images/mar06/gt.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/gt-small.png") 0 -26px no-repeat;
 }
 
 #navbar #ar a:link, #navbar  #ar a:visited{
-	background: transparent url("../images/mar06/ar.png") 0 3px no-repeat;
+	background: transparent url("../images/banderas/ar-small.png") 0 3px no-repeat;
 }
 
 #navbar #ar a:hover, #navbar #ar a:focus, #navbar #ar a:active, #navbar #ar.current a{ 
-	background: transparent url("../images/mar06/ar.png") 0 -26px no-repeat;
+	background: transparent url("../images/banderas/ar-small.png") 0 -26px no-repeat;
 }
 
 #navbar #home a:link, #navbar #home a:visited{
-	background: transparent url("../images/mar06/go-home.png") 0 0 no-repeat;
+	background: transparent url("../images/go-home.png") 0 0 no-repeat;
 }  
 #navbar #home a:hover, #navbar #home a:focus, #navbar #home a:active, #navbar #home.current a{
-	background: transparent url("../images/mar06/go-home.png") 0 -25px no-repeat;
+	background: transparent url("../images/go-home.png") 0 -25px no-repeat;
 }
 
 
@@ -163,7 +163,7 @@ h1{font-size: 0.8em; margin: 0; }
  * 
  * - - - - - - - - - - - - - */
 #header{ 
-	background: transparent url("../images/mar06/bg-header.png") top left repeat-x; 
+	background: transparent url("../images/bg-header.png") top left repeat-x; 
 }
 #inside{ }
 #header-title {

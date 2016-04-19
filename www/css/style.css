@@ -11,12 +11,16 @@ img {
 	border: none;
 	padding-top:10px; 
 } 
-#tabs {	float:left;	width:100%;
+#tabs {
+	float:left;
+	width:100%;
 	background:#F9F7F3;
   	font-size:93%;
   	line-height:normal;
-	border-bottom:1px solid #C2BDAE;}
-#tabs ul {	margin:0;
+	border-bottom:1px solid #C2BDAE;
+}
+#tabs ul {
+	margin:0;
 	padding:10px 10px 0 50px;
 	list-style:none;
 }
