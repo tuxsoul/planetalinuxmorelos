@@ -26,7 +26,7 @@ p{ margin: 0 0.7em 1em 0.7em; }
   overflow: hidden;
   height: 0 !important;
   height /**/: 100px;
-  background: transparent url("../images/mar06/planetalinux.png") 0 0 no-repeat;
+  background: transparent url("../images/planetalinux.png") 0 0 no-repeat;
   text-decoration: none;
 }
 /** 
@@ -39,7 +39,7 @@ h2#normas{
   overflow: hidden;
   height: 0 !important;
   height /**/: 20px;
-  background: transparent url("../images/mar06/lineamientos.png") 0 0 no-repeat;
+  background: transparent url("../images/lineamientos.png") 0 0 no-repeat;
 }
 /** 
  * Enlaces
@@ -76,7 +76,7 @@ h2#normas{
 	list-style-type: none;
 }
 #content ul li{
- 	background: url("../images/mar06/bullet.png") 0 2px no-repeat;
+ 	background: url("../images/bullet.png") 0 2px no-repeat;
  	padding-left: 20px;
  	line-height: 1.7em;
 	margin: 0 0.7em;
