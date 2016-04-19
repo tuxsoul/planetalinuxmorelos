@@ -41,7 +41,7 @@ border-bottom: 1px dotted #f60;
 }
 
 #members li{
-  background: transparent url("../images/mar06/person.png") 0 3px no-repeat;
+  background: transparent url("../images/person.png") 0 3px no-repeat;
 }
 #navegacion li{
 	background: transparent url("../images/mar06/arrow_up.png") 0 3px no-repeat;
@@ -76,27 +76,27 @@ h3#difunde{
   margin-bottom: 7px;
   margin-top: 16px;
   width: 74px;
-  background: transparent url("../images/mar06/difunde.png") top left no-repeat;
+  background: transparent url("../images/difunde.png") top left no-repeat;
 }
 h3#colabora{
   width: 93px;
-  background: transparent url("../images/mar06/colaborar.png") top left no-repeat;
+  background: transparent url("../images/colaborar.png") top left no-repeat;
 }
 h3#about{
   width: 64px;
-  background: transparent url("../images/mar06/acerca.png") top left no-repeat;
+  background: transparent url("../images/acerca.png") top left no-repeat;
 }
 h3#bloggers{
   width: 55px;
-  background: transparent url("../images/mar06/gente.png") top left no-repeat;
+  background: transparent url("../images/gente.png") top left no-repeat;
 }
 h3#worldwide{
   width: 148px;
-  background: transparent url("../images/mar06/worldwide.png") top left no-repeat;
+  background: transparent url("../images/worldwide.png") top left no-repeat;
   }
 h3#debian-day{
   width: 86px;
-  background: transparent url("../images/mar06/debian-day.png") top left no-repeat;
+  background: transparent url("../images/debian-day.png") top left no-repeat;
   }
 h3#goto{
   margin-top: 16px;

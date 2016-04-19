@@ -153,7 +153,7 @@ blockquote{
 	float: left;
 }
 #entry-wrap .post-footer a.permalink:link, #entry-wrap .post-footer a.permalink:visited{
-	background: transparent url("../images/mar06/permalink.png") 100% 50% no-repeat;
+	background: transparent url("../images/permalink.png") 100% 50% no-repeat;
 	padding: 3px 21px 4px 0;
 }
 #entry-wrap .author-info a.twitter:link, #entry-wrap .author-info a.twitter:visited{
@@ -164,7 +164,7 @@ blockquote{
 	height: 0 !important;
 	height /**/: 16px;
 	width: 16px;
-	background: transparent url("../images/mar06/twitter.png") top left no-repeat;
+	background: transparent url("../images/twitter.png") top left no-repeat;
 	margin: 0 0 0 0;
 }
 #entry-wrap .author-info cite a:hover,
@@ -209,7 +209,7 @@ pre {
  	color: #636563;
  	font-weight: bold;
  	margin: 1em 0 -1em 2em;
-	background: transparent url("../images/mar06/date.png") 0 0 no-repeat;
+	background: transparent url("../images/date.png") 0 0 no-repeat;
 	padding-left: 52px;
 	padding-bottom: 20px;
  }
@@ -229,7 +229,7 @@ pre {
   margin: 5px 10px 5px 25px;
   }
  #entry-wrap .entry-content ul li{
- 	background: url("../images/mar06/bullet.png") 0 2px no-repeat;
+ 	background: url("../images/bullet.png") 0 2px no-repeat;
  	padding-left: 20px;
  	line-height: 1.65em;
  } 
@@ -264,7 +264,7 @@ p { margin-bottom: 1em; }
 /* TAGS */
 #entry-wrap .entry-content .tagdata{ margin: 0.5em 0; display: block; }
 
-#entry-wrap .entry-content a[rel="tag"]{ background: transparent url("../images/mar06/tag.png") 0 0 no-repeat; padding-left: 20px; border-bottom: 0 none; }
+#entry-wrap .entry-content a[rel="tag"]{ background: transparent url("../images/tag.png") 0 0 no-repeat; padding-left: 20px; border-bottom: 0 none; }
 
 /* IMAGENES */
 .entry-content .alignleft,

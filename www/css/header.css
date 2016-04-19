@@ -23,7 +23,7 @@
   overflow: hidden;
   height: 0 !important;
   height /**/: 100px;
-  background: transparent url("../images/mar06/planetalinux.png") 0 0 no-repeat;
+  background: transparent url("../images/planetalinux.png") 0 0 no-repeat;
 }
 #header-title a:hover,
 #header-title a:active{
@@ -146,10 +146,10 @@
 }
 
 #navbar #home a:link, #navbar #home a:visited{
-	background: transparent url("../images/mar06/go-home.png") 0 0 no-repeat;
+	background: transparent url("../images/go-home.png") 0 0 no-repeat;
 }  
 #navbar #home a:hover, #navbar #home a:focus, #navbar #home a:active, #navbar #home.current a{
-	background: transparent url("../images/mar06/go-home.png") 0 -25px no-repeat;
+	background: transparent url("../images/go-home.png") 0 -25px no-repeat;
 }
 
 
@@ -163,7 +163,7 @@ h1{font-size: 0.8em; margin: 0; }
  * 
  * - - - - - - - - - - - - - */
 #header{ 
-	background: transparent url("../images/mar06/bg-header.png") top left repeat-x; 
+	background: transparent url("../images/bg-header.png") top left repeat-x; 
 }
 #inside{ }
 #header-title {
