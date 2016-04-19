@@ -2,9 +2,9 @@
 countries: 
   - mx
 email: ~
-enabled: 'off'
+enabled: 'on'
 filename: max_valdez
 message: ~
 name: Max Valdez
 twitter: ~
-url: http://thegaraged.org/?feed=rss2
+url: http://garaged.org/?feed=rss2
