@@ -4,6 +4,22 @@ RewriteEngine On
 # Disable Indexes
 Options -Indexes
 
+# Disable exec files
+<Files *.php>
+  Order Deny,Allow
+  Deny from All
+</Files>
+
+<Files *.pl>
+  Order Deny,Allow
+  Deny from All
+</Files>
+
+<Files *.rb>
+  Order Deny,Allow
+  Deny from All
+</Files>
+
 # Rewrite to internal files or folders
 
 # Rewrite empty /
@@ -19,6 +35,9 @@ RewriteRule ^index.html$ /www/mx/index.html [L,NC]
 # Redirect to real rss.xml
 RewriteRule ^rss.xml$ /www/mx/rss.xml [L,NC]
 RewriteRule ^mx/rss.xml$ /www/mx/rss.xml [L,NC]
+
+# Redirect to real sitemap.xml
+RewriteRule ^sitemap.xml$ /www/mx/sitemap.xml [L,NC]
 
 # Redirect from old files to new files
 Redirect 301 /rss10.xml /rss.xml
