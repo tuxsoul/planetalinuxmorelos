@@ -43,6 +43,7 @@ RewriteRule ^sitemap.xml$ /www/mx/sitemap.xml [L,NC]
 Redirect 301 /rss10.xml /rss.xml
 Redirect 301 /rss20.xml /rss.xml
 Redirect 301 /atom.xml /rss.xml
+Redirect 301 /feed.xml /rss.xml
 
 # ugly file
 Redirect 301 /mx/rss.xml /rss.xml
