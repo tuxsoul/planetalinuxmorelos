@@ -6,5 +6,5 @@ enabled: 'on'
 filename: max_valdez
 message: ~
 name: Max Valdez
-twitter: ~
-url: http://garaged.org/?feed=rss2
+twitter: garaged
+url: https://garaged.org/feed
