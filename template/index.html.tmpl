@@ -3,9 +3,9 @@
 <head>
 <title><TMPL_VAR name></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="../css/main.css" type="text/css" />
-<link rel="shortcut icon" type="image/png" href="../images/favicon.ico" />
-<link rel="alternate" type="application/rss+xml" title="Planeta Linux Morelos" href="/[% instance_tld %]/rss.xml" />
+<link rel="stylesheet" href="/css/main.css" type="text/css" />
+<link rel="shortcut icon" type="image/png" href="/images/favicon.ico" />
+<link rel="alternate" type="application/rss+xml" title="Planeta Linux Morelos" href="/rss.xml" />
 
 </head>
 
@@ -13,7 +13,7 @@
 	
 <div id="header">
   <div id="inside">
-    <h1 id="header-title"><a href="../[% instance_code %]" title="Planeta Linux Morelos | [% instance_name %]"><TMPL_VAR name></a></h1>
+    <h1 id="header-title"><a href="/" title="Planeta Linux Morelos"></a></h1>
     <p id="goto-content"><a href="#entry-wrap" title="Ir al contenido">Ir al Contenido</a></p>
     <div id="menu">
       <ul id="navbar">
@@ -27,13 +27,8 @@
 
 <div align="center">
 <br /><br />
-
-<!-- google adsense -->
-<!-- /google adsense -->
-
 <br /><br />
 </div>
-
 
 <div id="entry-wrap">
 
@@ -52,7 +47,7 @@
 	
 
 		<div class="author-info">
-			<TMPL_IF channel_face><img class="cabeza" src="../images/cabezas/<TMPL_VAR channel_face ESCAPE="HTML">" alt="<TMPL_VAR channel_name>" title="Hackergotchi de <TMPL_VAR channel_name>" /></TMPL_IF>
+			<TMPL_IF channel_face><img class="cabeza" src="/images/cabezas/<TMPL_VAR channel_face ESCAPE="HTML">" alt="<TMPL_VAR channel_name>" title="Hackergotchi de <TMPL_VAR channel_name>" /></TMPL_IF>
       	<div class="author-description"><p><span><TMPL_VAR channel_name></span><br />
       	<cite><a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="Blog de: <TMPL_VAR channel_name>" class="weblog"><TMPL_VAR channel_title></a></cite>
 
@@ -108,14 +103,6 @@
 	</p>
 
 	<br/>
-
-	<!-- <h3 class="sidebartitle">Facebook</h3> -->
-	<!-- <p align="center"> -->
-	<!--    <center> -->
-		<!-- facebook --><!-- /facebook -->
-	<!--    </center> -->
-	<!-- </p> -->
-	
 	
       	<h3 class="sidebartitle">Colabora</h3>
 			<p>Si te interesa ser miembro de <em>Planeta Linux Morelos</em>, cualquier persona, usuaria o desarrolladora de GNU/Linux o software libre, puede ser agregado.</p>
@@ -148,14 +135,14 @@
 		<br>
 		
 		<h3 class="sidebartitle">Donaciones</h3>
-			<p align="center"><a href="http://coffee.tuxsoul.com" target="_blank"><img src="../images/bitcoin.png"/></a></p>
+			<p align="center"><a href="http://coffee.tuxsoul.com" target="_blank"><img src="/images/bitcoin.png"/></a></p>
 
 		<br>
 
 		<h3 class="sidebartitle">Última actualización</h3>
 			<p><tt>[% last_update %] CET</tt></p>
 		
-		<p><a href="/[% instance_tld %]/rss.xml"/><img src="../images/feed.png"/></a></p>
+		<p><a href="/rss.xml"/><img src="/images/feed.png"/></a></p>
 
 	</div><!--/inner-->
 
@@ -163,10 +150,6 @@
 
 	 
 </div><!--/sidebar-->
-
-
-<!-- google analytics -->
-<!-- /google analytics -->
 
 </body>
 </html>
