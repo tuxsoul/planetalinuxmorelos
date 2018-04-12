@@ -1,7 +1,6 @@
 User-agent: *
 
 Disallow: /.git/
-Disallow: /.openshift/
 Disallow: /authors/
 Disallow: /cache/
 Disallow: /config/
