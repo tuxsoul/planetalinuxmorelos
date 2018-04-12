@@ -23,8 +23,6 @@ my $modules = [qw!
 	Net::Domain::ES::ccTLD
 	Template
         XML::Parser
-	# Se anexa paquete en tools/cpan dado que la version online tiene error para compilar
-	# WebService::Validator::Feed::W3C
 	YAML::Syck
 !];
 
