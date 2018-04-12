@@ -12,6 +12,7 @@ my $modules = [qw!
 	Capture::Tiny
 	Config::IniFiles
 	Data::Validate::Email
+        Module::Install
 	DateTime
 	File::MimeInfo::Simple
 	File::Path
@@ -21,8 +22,7 @@ my $modules = [qw!
 	Module::Build
 	Net::Domain::ES::ccTLD
 	Template
-	# Se anexa paquete en tools/cpan dado que la version online tiene error para compilar
-	# WebService::Validator::Feed::W3C
+        XML::Parser
 	YAML::Syck
 !];
 
