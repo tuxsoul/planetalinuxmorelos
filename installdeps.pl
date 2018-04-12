@@ -12,6 +12,7 @@ my $modules = [qw!
 	Capture::Tiny
 	Config::IniFiles
 	Data::Validate::Email
+        Module::Install
 	DateTime
 	File::MimeInfo::Simple
 	File::Path
